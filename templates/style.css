@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.conteneur1{
+    display: flex;
+}
+
+.logo_header{
+    width: 20%;
+    flex-direction: row;
+}
+
+.logo_header img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.menu_header{
+    flex-direction: row;
+}
+
+
+
+
+/*Formulaire*/
+
+
+.conteneur_connexion{
+    display: flex;
+    background: #f2f2f2;
+    margin-bottom: 100px;
+}
+
+
+.connexion img{
+    width: 3%;
+}
+
+.connexion h1{
+    color: #ff6123;
+}
+
+.parconnexion{
+    color: #ff6123;
+    margin-top: 10px;
+    margin-left: -51px;
+}
+
+.connexion{
+    color: #004365;
+    height: 100px;
+    width: 50%;
+    margin-left: 120px;
+    padding-left: 55px;
+    line-height: 20px;
+}
+
+.connexion #submit{
+    background: #ff572e;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: none;
+}
+
+.connexion input{
+    background: rgb(206, 205, 205);
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin-left: 5px;
+    line-height: 20px;
+}
+
+
+.span2{
+    background: #838282;
+    border: 1px solid #838282;
+    height: 50px;
+    margin: 45px;
+    margin-left: -100px;
+}
+
+.creation_compte{
+    margin-left: 150px;
+    color: #8a8a92;
+}
+
+.creation_compte input{
+    background: #8a8a92;
+    height: 30px;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 100px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+/**/

@@ -1,5 +1,8 @@
 <?php
 
+    namespace Modeles;
+    use PDO;
+
     class Client {
 
         private $id_client;
@@ -10,16 +13,16 @@
         private $mail;
         private $mdp;
 
-        function __construct(int $id_client, string $nom, string $prenom, string $adresse, int $tel, string $mail, string $mdp)
-        {
-            $this->id_client = $id_client;
-            $this->nom = $nom;
-            $this->prenom = $prenom;
-            $this->adresse = $adresse;
-            $this->tel = $tel;
-            $this->mail = $mail;
-            $this->mdp = $mdp;
-        }
+        // function __construct(int $id_client, string $nom, string $prenom, string $adresse, int $tel, string $mail, string $mdp)
+        // {
+        //     $this->id_client = $id_client;
+        //     $this->nom = $nom;
+        //     $this->prenom = $prenom;
+        //     $this->adresse = $adresse;
+        //     $this->tel = $tel;
+        //     $this->mail = $mail;
+        //     $this->mdp = $mdp;
+        // }
 
 
         // Construction des getters
@@ -119,46 +122,32 @@
 
         
 
-        // function insert_user(): array {
 
-        //     require_once "classes/Utilisateur.php";
-        //     $compteur = ajoutID();
+
+
+        function insertUser(): array {
+
+            require_once "modeles/Client.php";
         
-        //     //encryptage du mdp
-        //     $mdp = password_hash($_POST["mdp"], PASSWORD_DEFAULT, ['cost => 12']);
+            //encryptage du mdp
+            $mdp = password_hash($_POST["mdp"], PASSWORD_DEFAULT, ['cost => 12']);
         
-        //     $user = new Utilisateur($_POST["pseudo"],$mdp , $compteur );
-        //     $user->save_user();
+            $user = new Client($_POST["mail"],$mdp);
+            $user->saveUser();
         
-        //     // redirection du la page de co au lieu de la page d'accueil
-        //     header("Location:index.php?page=connexion");
-        //     exit;
-        // }
+            // redirection du la page de co au lieu de la page d'accueil
+            header("Location:index.php?page=connect");
+            exit;
+        }
         
-        // function showFormCo(): array {
+        function showFormCo(): array {
         
-        //     return ["template" => "connexion.php"];
+            return ["template" => "formulaire.php"];
         
-        // }
+        }
         
-        // function connect_user(): array {
-        
-        //     require_once "classes/Utilisateur.php";
-        
-        //     $userCo = new Utilisateur($_POST["pseudoCo"], $_POST["mdpCo"], $compteur=0 );
-        //     if ($userCo->verify_user()) {
-        //         session_start();
-        //         $_SESSION["user"] = $_POST["pseudoCo"];
-        //         $_SESSION["mdp"] = $_POST["mdpCo"];
-        
-        //         header("Location:index.php?page=compte");
-        //         exit; 
-        //     }else {
-        //         // j'ai renvoyé à la page de connexion au lieu de l'accueil
-        //         header("Location:index.php?page=connexion");
-        //         exit; 
-        //     }
-        // }
+    
+
 
 
         function insert(){

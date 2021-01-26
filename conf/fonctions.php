@@ -9,19 +9,20 @@
     //$class est automatiquement relié avec "new" models\label(); sur le spl_autoload_register(attention automatique)
     spl_autoload_register(function(string $class){
 
-        // "Modeles\label"
+        // "Modeles\client"
         //echo $class;
 
         // le but est de remplacer le backslach(\), en slach(/) pour pouvoir aller sur le bon chemin models/Label.php
         $class = str_replace("\\", "/", $class);
         //echo $class;
 
+        //lcfirst() sert à mettre la première en minuscule
         $class = lcfirst($class);
         //echo $class;
 
         if (file_exists("$class.php")){
             require_once "$class.php";
-            // ex : require "models/Label.php";
+            // ex : require "models/Client.php";
             return true;
         }
         

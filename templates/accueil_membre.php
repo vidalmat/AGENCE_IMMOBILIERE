@@ -1,7 +1,7 @@
 <?php
 
 
-
+require "index.php";
 
 
 

@@ -18,6 +18,28 @@ function showForm() {
 }
 
 
+
+function showMembre() {
+    if(!isset($_SESSION["id_client"])) {
+        header("Location:index.php?route=showhome");
+    }
+    return [
+        "template" => "espace_membre.php"
+    ];
+}
+
+
+function showEspaceMembre() {
+    if(!isset($_SESSION["id_client"])) {
+        header("Location:index.php?route=showhome");
+    }
+    return [
+        "template" => "espace_membre.php"
+    ];
+}
+
+
+
 //Fonctions redirigées
 function connectUser() {
 
@@ -26,7 +48,7 @@ function connectUser() {
     // Il s'agit de : 
     // 1) Vérifier s'il existe un utilisateur enregistré correspondant à l'adresse mail 
     $user = new Modeles\Client();
-    $user->setEmail($_POST["mail"]);
+    $user->setMail($_POST["email"]);
     $verif = $user->selectByMail();
 
 

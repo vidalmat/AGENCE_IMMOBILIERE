@@ -1,6 +1,6 @@
 <?php
 
-require_once "conf/fonctions.php";
+//require_once "conf/fonctions.php";
 require_once "controllers.php";
 
 var_dump($_GET);
@@ -22,6 +22,8 @@ switch ($route) {
 
     case "showhome" : $toTemplate = showHome();
     break;
+    case "showform" : $toTemplate = showForm();
+    break;
     default : $toTemplate = showHome(); // fonction par défaut
 
 }
@@ -38,7 +40,7 @@ switch ($route) {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../templates/style.css">
+    <link rel="stylesheet" href="templates/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agence</title>
 </head>

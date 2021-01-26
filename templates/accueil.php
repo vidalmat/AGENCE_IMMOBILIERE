@@ -1,6 +1,6 @@
 <?php
 
-require_once "index.php";
+
 
 
 
@@ -15,7 +15,7 @@ require_once "index.php";
 
         <div class="logo_header">
 
-            <img src="../images/logo.png" alt="logo">
+            <img src="images/logo.png" alt="logo">
 
         </div>
 
@@ -23,7 +23,7 @@ require_once "index.php";
             <nav>
                 <ul>
                     <li>Mes favoris</li>
-                    <li>Mon compte</li>
+                    <li><a href="index.php?route=showform">Mon compte</a></li>
                 </ul>
             </nav>
             
@@ -34,7 +34,7 @@ require_once "index.php";
     <div class="menu_header">
         <nav>
             <ul>
-                <li>Acheter</li>
+                <li><a href="#">Acheter</a></li>
                 <li>Louer</li>
                 <li>Vendre</li>
                 <li>Nos agences</li>
@@ -50,25 +50,31 @@ require_once "index.php";
 
     <div class="conteneur2">
 
-        <img src="../images/img_accueil_flou.jpg" alt="photo accueil">
+        <img src="images/img_accueil_flou.jpg" alt="photo accueil">
 
-        <div class="bloc">
+        <div class="bloc_search">
+            
+            <div class="bloc">
 
-            <nav>
-                <ul>
-                    <li>Louer</li>
-                    <li>Acheter</li>
-                    <li>Estimer</li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li>Louer</li>
+                        <li>Acheter</li>
+                        <li>Estimer</li>
+                    </ul>
+                </nav>
+
+            </div>
+            
+            <form action="" method="POST">
+                <input type="text" placeholder="Adresse de votre bien" name="recherche" id="adresse_bien">
+                <input type="submit" value="Estimer" id="submit">
+                <input type="submit" value="Estimer mon bien" id="recherche_estimer">
+            </form>
+
+            <h2>Votre bien</h2>
 
         </div>
-        
-        <form action="" method="POST">
-            <input type="text" placeholder="Adresse de votre bien" name="recherche" id="adresse_bien">
-            <input type="submit" value="Estimer" id="submit">
-            <input type="submit" value="Estimer mon bien" id="recherche_estimer">
-        </form>
 
 
         <div class="conteneur3">
@@ -152,7 +158,7 @@ require_once "index.php";
         <div class="par3">
 
             <p>Applications</p>
-            <img src="../images/logo_store.png" alt="logo_store">
+            <img src="images/logo_store.png" alt="logo_store">
             
         </div>
 

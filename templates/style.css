@@ -1,7 +1,27 @@
+.sm-col-1 { width: 8.33%; }
+.sm-col-2 { width: 16.66%; }
+.sm-col-3 { width: 25%;}
+.sm-col-4 { width: 33.33%;}
+.sm-col-5 { width: 41.66%;}
+.sm-col-6 { width: 50%;}
+.sm-col-7 { width: 58.33%;}
+.sm-col-8 { width: 66.66%;}
+.sm-col-9 { width: 75%;}
+.sm-col-10 { width: 83.33%;}
+.sm-col-11 { width: 91.66%;}
+.sm-col-12 { width: 100%; }
+
+
+
+
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link{
+    text-decoration: none;
 }
 
 
@@ -12,10 +32,6 @@ body{
     align-items: flex-end;
 }
 
-
-.nav_user{
-
-}
 
 
 .nav_user li{
@@ -57,8 +73,49 @@ body{
 
 /* fin du header */ 
 
-/*Formulaire*/
 
+/* Début section */
+
+/* Bloc recherche */
+.bloc_search{
+    width: 50%;
+
+    border: 1px solid green;
+}
+
+
+
+/* Fin bloc recherche */
+
+
+.bloc li{
+    list-style-type: none;
+}
+
+/* Fin section */
+
+
+
+/* Début footer */
+
+.conteneur6 li{
+    list-style-type: none;
+}
+
+
+
+.conteneur7 li{
+    list-style-type: none;
+}
+
+
+
+/* Fin footer */
+
+/*Formulaire*/
+.span{
+    font-weight: bold;
+}
 
 .conteneur_connexion{
     display: flex;

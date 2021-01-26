@@ -1,11 +1,27 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
+/* header */
 .conteneur1{
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.nav_user{
+
+}
+
+
+.nav_user li{
+    list-style-type: none;
+    display: inline;
+	list-style: none;
 }
 
 .logo_header{
@@ -21,17 +37,25 @@ body{
 
 
 
-
-
-
-
-
 .menu_header{
-    flex-direction: row;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.menu_header li{
+    margin: 8.5em;
+    list-style-type: none;
+    display: inline;
+    list-style: none;
 }
 
 
+.conteneur2 img{
+    width: 100%;
+}
 
+
+/* fin du header */ 
 
 /*Formulaire*/
 

@@ -63,6 +63,7 @@ a:link{
     list-style-type: none;
     display: inline;
     list-style: none;
+    text-transform: uppercase;
 }
 
 
@@ -78,10 +79,66 @@ a:link{
 
 /* Bloc recherche */
 .bloc_search{
+    position: relative;
+    background-color: white;
     width: 50%;
-
-    border: 1px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20em;
+    margin-bottom: 15em;
+    border-radius: 0.8em;
 }
+
+
+.bloc_search li{
+    display: inline;
+    margin: 5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+}
+
+
+.bloc_search h2{
+    width: 25%;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2em;
+    background: red;
+    border: 1px solid green;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+}
+
+
+.bloc_search h2 a{
+    color: white;
+}
+
+
+.bloc_search a:hover{
+    background: rgb(139, 0, 0);
+    border-radius: 0.2em;
+    border: 1px solid  rgb(139, 0, 0);;
+}
+
+.bloc{
+    background: rgb(206, 206, 250);
+    border-radius: 0.8em 0.8em 0 0;
+    border: 1px solid rgb(206, 206, 250);
+} 
+
+
+.bloc h2{
+    border: 1px solid green;
+    text-align: center;
+}
+
+
+
+
 
 
 

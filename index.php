@@ -1,7 +1,10 @@
 <?php
 
+
+session_start();
 //require_once "conf/fonctions.php";
 require_once "controllers.php";
+require_once "conf/fonctions.php";
 
 var_dump($_GET);
 
@@ -23,6 +26,14 @@ switch ($route) {
     case "showhome" : $toTemplate = showHome();
     break;
     case "showform" : $toTemplate = showForm();
+    break;
+    case "espace_membre" : $toTemplate = showEspaceMembre();
+    break;
+    case "connect" : $toTemplate = connectUser();
+    break;
+    case "insert_user" : $toTemplate = insertUser();
+    break;
+    case "deconnect" : $toTemplate = deconnectUser();
     break;
     default : $toTemplate = showHome(); // fonction par défaut
 

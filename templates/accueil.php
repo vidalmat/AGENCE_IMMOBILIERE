@@ -50,10 +50,10 @@
 
     <div class="conteneur2">
 
-        <img src="images/img_accueil_flou.jpg" alt="photo accueil">
+        <img src="images/img_accueil_flou2.jpg" alt="photo accueil">
 
         <div class="bloc_search">
-            
+
             <div class="bloc">
 
                 <nav>
@@ -72,7 +72,7 @@
                 <input type="submit" value="Estimer mon bien" id="recherche_estimer">
             </form>
 
-            <h2>Votre bien</h2>
+            <h2><a href="#">Votre bien</a></h2>
 
         </div>
 

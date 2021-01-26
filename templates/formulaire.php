@@ -14,7 +14,7 @@ require_once "index.php";
 
 
 
-<p class="fildar">abri-nature-immobilier / <a href="index.php?route=showhome">accueil /<span class="span"> connexion</span></p>
+<p class="fildar">abri-nature-immobilier / <a href="index.php?route=showhome">accueil /</a><span class="span"> connexion</span></p>
 
 <div class="conteneur_connexion">
 
@@ -22,11 +22,11 @@ require_once "index.php";
 
         <p class="parconnexion">Vous tentez d'accéder à un contenu qui nécessite que vous soyez connecté(e).</p>
 
-        <form action="" method="POST">
+        <form action="index.php?route=connect" method="POST">
             
                 <h1><img src="images/fleche_bas.png" alt="fleche bas">Se connecter</h1>
             
-                <input type="email" placeholder="Email" name="email" required>
+                <input type="email" placeholder="Email" name="mail" required>
                 
                     <input type="password" placeholder="Mot de passe" name="password" required >
                 
@@ -38,7 +38,7 @@ require_once "index.php";
             
     <div class="creation_compte">
 
-                <form action="" method="POST">
+                <form action="index.php?route=insert_user" method="POST">
                     <h2>Vous n'avez pas de compte?</h2>
 
                     <input type="submit" id='submit' value='Créer un compte' >
@@ -58,7 +58,8 @@ require_once "index.php";
             <input type="text" placeholder="Prénom" name="prenom" id="prenom">
             <input type="text" placeholder="Adresse" name="adresse" id="adresse">
             <input type="number" placeholder="Téléphone" name="telephone" id="telephone">
-            <input type="text" placeholder="Email" name="email" id="email">
+            <input type="text" placeholder="Email" name="mail" id="mail">
+            <input type="password" placeholder="Mot de passe" name="password" required >
             <input type="submit" value="S'inscrire" name="inscription" id="inscription">
 
 

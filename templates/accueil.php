@@ -65,16 +65,26 @@
                 </nav>
 
             </div>
-            
-            <form action="" method="POST">
-                <input type="text" placeholder="Adresse de votre bien" name="recherche" id="adresse_bien">
-                <input type="submit" value="Estimer" id="submit">
-                <input type="submit" value="Estimer mon bien" id="recherche_estimer">
+
+            <p>Estimez votre bien en 5 minutes</p>
+
+            <form action="">
+
+            <input type="text" placeholder="Adresse de votre bien" name="recherche" id="adresse_bien">
+
+            <ul>
+                
+                <div id="cadre_estimer">
+                    <li id="estimer"><img src="images/mains_serrees.png" alt="">Estimer le prix de vente</li>
+                    <li id="loyer">Estimer mon loyer</li>
+                </div>
+            </ul>
+
             </form>
 
-            <h2><a href="#">Votre bien</a></h2>
-
         </div>
+
+        <h2 class="votre_bien"><a href="#">Votre bien</a></h2>
 
 
         <div class="conteneur3">

@@ -4,7 +4,7 @@
 session_start();
 
 require_once "conf/fonctions.php";
-//require_once "conf/fonctions.php";
+require_once "conf/fonctions.php";
 require_once "controllers.php";
 
 var_dump($_GET);
@@ -32,9 +32,7 @@ switch ($route) {
     break;
     case "connect" : $toTemplate = connectUser();
     break;
-    case "save_user" : $toTemplate = saveUser();
-    break;
-    case "insert" : $toTemplate = insert();
+    case "insert_client" : $toTemplate = insertClient();
     break;
     case "deconnect" : $toTemplate = deconnectUser();
     break;

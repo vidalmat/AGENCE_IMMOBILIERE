@@ -54,6 +54,8 @@
             return $this->mdp;
         }
 
+        /* Fin des getters */
+
 
         // Construction des setters
         public function setIdClient(int $id_client) {
@@ -83,7 +85,8 @@
         public function setMdp(string $mdp) {
             $this->mdp = $mdp;
         }
-
+        
+        /* Fin des setters */
 
 
 
@@ -120,43 +123,36 @@
         //     fclose($handle);
         // }
 
+
+
+        // function insertUser(): array {
+
+        //     require_once "modeles/Client.php";
         
-
-
-        function saveUser() {
-
-
-
-        }
-
-
-
-        function insertUser(): array {
-
-            require_once "modeles/Client.php";
+        //     //encryptage du mdp
+        //     $mdp = password_hash($_POST["mdp"], PASSWORD_DEFAULT, ['cost => 12']);
         
-            //encryptage du mdp
-            $mdp = password_hash($_POST["mdp"], PASSWORD_DEFAULT, ['cost => 12']);
+        //     $user = new Client($_POST["mail"],$mdp);
+        //     $user->saveUser();
         
-            $user = new Client($_POST["mail"],$mdp);
-            $user->saveUser();
+        //     // redirection du la page de co au lieu de la page d'accueil
+        //     header("Location:index.php?page=connect");
+        //     exit;
+        // }
         
-            // redirection du la page de co au lieu de la page d'accueil
-            header("Location:index.php?page=connect");
-            exit;
-        }
+        // function showFormCo(): array {
         
-        function showFormCo(): array {
+        //     return ["template" => "formulaire.php"];
         
-            return ["template" => "formulaire.php"];
-        
-        }
+        // }
         
     
 
 
+        // FONCTIONS INTERNES À LA CLASSE
 
-        function insert(){
+
+        public function insertClient(){
             $query = "INSERT INTO clients(mail, mdp) VALUE (:mail, :mdp);";
 
             $result = $this->pdo->prepare($query);
@@ -168,12 +164,12 @@
         }
 
 
-        function dbConnect() {
+        public function dbConnect() {
             $this->pdo = new PDO("mysql:host=localhost:3306;dbname=tp_agence;charset=utf8");
         }
 
 
-        function selectByMail() {
+        public function selectByMail() {
 
             $query = "SELECT id_client, mail, mdp FROM clients;";
             $this->dbConnect();

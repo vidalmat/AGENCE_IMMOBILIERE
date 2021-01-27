@@ -38,7 +38,7 @@ require_once "index.php";
             
     <div class="creation_compte">
 
-                <form action="index.php?route=insert_user" method="POST">
+                <form action=" " method="POST">
                     <h2>Vous n'avez pas de compte?</h2>
 
                     <input type="submit" id='submit' value='Créer un compte' >
@@ -52,7 +52,7 @@ require_once "index.php";
 
     <div class="formulaire">
 
-        <form action="" method="POST">
+        <form action="index.php?route=insert_client" method="POST">
 
             <input type="text" placeholder="Nom" name="nom" id="nom">
             <input type="text" placeholder="Prénom" name="prenom" id="prenom">

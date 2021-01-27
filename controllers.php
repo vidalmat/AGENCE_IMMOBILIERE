@@ -67,7 +67,7 @@ function connectUser() {
             exit;
 
         }else {
-            //Le mot de passe est incorrect
+            echo "Le mot de passe est incorrect";
         }
 
     }

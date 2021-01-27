@@ -82,6 +82,7 @@ a:link{
     position: relative;
     background-color: white;
     width: 50%;
+    height: 35%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -20em;
@@ -95,20 +96,76 @@ a:link{
     margin: 5em;
     text-transform: uppercase;
     font-weight: bold;
-    color: rgb(75, 75, 75);
+    color: rgb(104, 104, 104);
 }
 
 
-.bloc_search h2{
+.bloc_search p{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+}
+
+
+#cadre_estimer{
+    display: flex;
+}
+
+
+#cadre_estimer img{
+    width: 3%;
+}
+
+
+.bloc_search #adresse_bien{
+    display: block;
+    width: 80%;
+    margin-bottom: -4em;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+
+.bloc_search #estimer{
+    background: rgb(48, 171, 202);
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.bloc_search #loyer{
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+}
+
+
+
+
+.votre_bien{
+    position: relative;
     width: 25%;
     height: 5%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -10.7em;
+    margin-bottom: 7em;
     border-radius: 0.2em;
     background: red;
-    border: 1px solid green;
     text-align: center;
     line-height: 35px;
+   
+}
+
+
+.votre_bien h2{
+    text-decoration: white;
     color: white;
 }
 
@@ -137,7 +194,7 @@ a:link{
 }
 
 
-
+/**/
 
 
 

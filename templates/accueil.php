@@ -56,13 +56,13 @@
 
             <div class="bloc">
 
-                <nav>
-                    <ul>
-                        <li>Louer</li>
-                        <li>Acheter</li>
-                        <li id="rouge">Estimer</li>
-                    </ul>
-                </nav>
+                
+                <p>Louer</p>
+                <p>Acheter</p>
+
+                <div id="rouge">
+                    <p>Estimer</p>
+                </div>
 
             </div>
 

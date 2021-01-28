@@ -6,7 +6,7 @@ namespace Modeles;
 use PDO;
 
 
-class Agent {
+class Agent extends DbConnect {
 
     private $id_agent;
     private $nom;
@@ -33,7 +33,7 @@ class Agent {
         return $this->adresse;
     }
 
-    public function getTel(): int {
+    public function getTel(): ?string {
         return $this->tel;
     }
     
@@ -64,7 +64,7 @@ class Agent {
         $this->adresse = $adresse;
     }
 
-    public function setTel(int $tel) {
+    public function setTel(string $tel) {
         $this->tel = $tel;
     }
 
@@ -119,7 +119,13 @@ class Agent {
         $result->bindValue("mail", $this->mail, \PDO::PARAM_STR);
         $result->bindValue("mdp", $this->mdp, \PDO::PARAM_STR);
 
-        $result->execute();
+        if(!$result->execute()) {
+            var_dump( $result->errorInfo()); // sert à détecter la moindre erreur dans la fonction
+            $_SESSION["error"]["bdd"] = $result->errorInfo()[2]; // sert à faire apparaître l'erreur dû à un mail identique par ex 
+            return false;
+        }else {
+            return $this;
+        }
     }
 
     
@@ -139,7 +145,7 @@ class Agent {
         $result->bindValue("mail", $this->mail, \PDO::PARAM_STR);
         $result->execute();
 
-        return $result->fecth();
+        return $result->fetch();
 
     }
 

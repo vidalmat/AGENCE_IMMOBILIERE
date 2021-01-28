@@ -18,7 +18,7 @@ class RDV {
         return $this->id_rdv;
     }
 
-    public function getDate(): int {
+    public function getDate(): ?string {
             return $this->date_rdv;
     }
 
@@ -33,7 +33,7 @@ class RDV {
         $this->id_rdv = $id_rdv;
     }
 
-    public function setDate(int $date_rdv) {
+    public function setDate(?string $date_rdv) {
         $this->date_rdv = $date_rdv;
     }
 

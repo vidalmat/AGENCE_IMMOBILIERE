@@ -2,15 +2,13 @@
 
 // FONCTIONS "UTILITAIRES"
 
-
-
 // chargement automatique des class
 
     //$class est automatiquement relié avec "new" models\label(); sur le spl_autoload_register(attention automatique)
     spl_autoload_register(function(string $class){
 
         // "Modeles\client"
-        //echo $class;
+        echo $class;
 
         // le but est de remplacer le backslach(\), en slach(/) pour pouvoir aller sur le bon chemin models/Label.php
         $class = str_replace("\\", "/", $class);

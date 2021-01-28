@@ -2,11 +2,6 @@
 <?php
 
 
-require_once "index.php";
-
-
-
-
 
 ?>
 
@@ -28,7 +23,7 @@ require_once "index.php";
             
                 <input type="email" placeholder="Email" name="mail" required>
                 
-                    <input type="password" placeholder="Mot de passe" name="password" required >
+                    <input type="password" placeholder="Mot de passe" name="mdp" required >
                 
             <input type="submit" id='submit' value='LOGIN' >
         </form>
@@ -40,31 +35,37 @@ require_once "index.php";
 
                     <h2>Vous n'avez pas de compte?</h2>
 
-                    <button type="button">Créer un compte</button>
+                    <button class="switchbutton" type="button">Créer un compte</button>
             </div>
     
 </div>
 
+<div id="form_button">
 
-<div class="conteneur_form">
+    <div class="conteneur_form">
 
-    <div class="formulaire">
+        <div class="formulaire">
 
-        <form action="index.php?route=insert_client" method="POST">
+            <form action="index.php?route=insert_client" method="POST">
 
-            <input type="text" placeholder="Nom" name="nom" id="nom">
-            <input type="text" placeholder="Prénom" name="prenom" id="prenom">
-            <input type="text" placeholder="Adresse" name="adresse" id="adresse">
-            <input type="number" placeholder="Téléphone" name="telephone" id="telephone">
-            <input type="text" placeholder="Email" name="mail" id="mail">
-            <input type="password" placeholder="Mot de passe" name="password" required >
-            <input type="submit" value="S'inscrire" name="inscription" id="inscription">
+                <input type="text" placeholder="Nom" name="nom" id="nom">
+                <input type="text" placeholder="Prénom" name="prenom" id="prenom">
+                <input type="text" placeholder="Adresse" name="adresse" id="adresse">
+                <input type="number" placeholder="Téléphone" name="tel" id="telephone">
+                <input type="text" placeholder="Email" name="mail" id="mail">
+                <input type="password" placeholder="Mot de passe" name="mdp" required >
+                <input type="submit" value="S'inscrire" name="inscription" id="inscription">
 
 
 
-        </form>
+            </form>
 
+
+        </div>
 
     </div>
 
 </div>
+
+
+<script src="js/button_showform.js"></script><!-- utilisation de js pour faire apparaître le formulaire -->

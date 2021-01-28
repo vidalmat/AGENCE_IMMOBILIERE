@@ -19,11 +19,15 @@ function showForm() {
 
 
 
-function showMembre() {
-    if(!isset($_SESSION["id_client"])) {
+function showEspaceAgent() {
+
+    if(!isset($_SESSION["id_agent"])) {
         header("Location:index.php?route=showhome");
     }
-    return ["template" => "espace_membre.php"];
+    return [
+        "template" => "templates/espace_agent.php"
+    ];
+
 }
 
 
@@ -32,7 +36,7 @@ function showEspaceMembre() {
         header("Location:index.php?route=showhome");
     }
     return [
-        "template" => "espace_membre.php"
+        "template" => "templates/espace_membre.php"
     ];
 }
 
@@ -46,19 +50,21 @@ function connectUser() {
     // Il s'agit de : 
     // 1) Vérifier s'il existe un utilisateur enregistré correspondant à l'adresse mail 
     $user = new Modeles\Client();
-    $user->setMail($_POST["email"]);
+    $user->setMail($_POST["mail"]);
     $verif = $user->selectByMail();
+
+    var_dump($verif);
 
 
     // 2) Vérifier, si oui, si les mots de passe coïcident
     if($verif) {
 
         // 3) Si tout est ok, on place l'utilisateur en session
-        if(password_verify($_POST["password"], $verif["password"])) {
+        if(password_verify($_POST["mdp"], $verif["mdp"])) {
 
             //Je peux connecter mon utilisateur
             $_SESSION["id_client"] = $verif["id_client"];
-            $_SESSION["email"] = $verif["email"];
+            $_SESSION["mail"] = $verif["mail"];
 
             // 4) On renvoie sur son espace perso
             header("location:index.php?route=espace_membre");
@@ -70,7 +76,7 @@ function connectUser() {
 
     }
 
-    header("location:index.php?route=showform");
+    // header("location:index.php?route=showform");
     exit;
 
 }
@@ -78,19 +84,22 @@ function connectUser() {
 
 
 function insertClient() {
+        
+    var_dump($_POST);
+
 
     $client = new Modeles\Client();
-        if(preg_match("#^.{1,50}$#", trim($_POST["client"]))) { // la fonction trim() sert à supprimer les espaces au début et à la fin
-            $client->setNom($_POST["client"]); // récupérer les données fournis par l'utilisateur
-            if(!$client->select()){
-                $client = $client->insert();
-            }              
-        }else {
-            echo "La connexion est incorrect";
-        }
+    $client->setNom($_POST["nom"]);
+    $client->setPrenom($_POST["prenom"]);
+    $client->setAdresse($_POST["adresse"]);
+    $client->setMail($_POST["mail"]);
+    $client->setTel($_POST["tel"]);
+    $client->setMdp(password_hash(($_POST["mdp"]), PASSWORD_DEFAULT));
+    $client->insert();
 
-        
-        header("Location:index.php?route=espace_membre");
+
+    header("Location:index.php?route=showform");
+    exit;
 
 }
 
@@ -98,18 +107,20 @@ function insertClient() {
 
 function insertAgent() {
 
-    $agent = new Modeles\Agent();
-        if(preg_match("#^.{1,50}$#", trim($_POST["agent"]))) { // la fonction trim() sert à supprimer les espaces au début et à la fin
-            $agent->setNom($_POST["agent"]); // récupérer les données fournis par l'utilisateur
-            if(!$agent->select()){
-                $agent = $agent->insert();
-            }              
-        }else {
-            echo "La connexion est incorrect";
-        }
+    var_dump($_POST);
 
-        
-        header("Location:index.php?route=espace_membre");
+
+    $agent = new Modeles\Agent();
+    $agent->setNom($_POST["nom"]);
+    $agent->setPrenom($_POST["prenom"]);
+    $agent->setMail($_POST["mail"]);
+    $agent->setTel($_POST["tel"]);
+    $agent->setMdp(password_hash(($_POST["mdp"]), PASSWORD_DEFAULT));
+    $agent->insert();
+
+
+    header("Location:index.php?route=showformagent");
+    exit;
 
 }
 

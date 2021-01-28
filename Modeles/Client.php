@@ -3,7 +3,7 @@
     namespace Modeles;
     use PDO;
 
-    class Client {
+    class Client extends DbConnect {
 
         private $id_client;
         private $nom;
@@ -42,7 +42,7 @@
             return $this->adresse;
         }
 
-        public function getTel(): int {
+        public function getTel(): ?string {
             return $this->tel;
         }
         
@@ -74,7 +74,7 @@
             $this->adresse = $adresse;
         }
 
-        public function setTel(int $tel) {
+        public function setTel(string $tel) {
             $this->tel = $tel;
         }
 
@@ -187,7 +187,13 @@
             $result->bindValue("mail", $this->mail, \PDO::PARAM_STR);
             $result->bindValue("mdp", $this->mdp, \PDO::PARAM_STR);
 
-            $result->execute();
+            if(!$result->execute()) {
+                var_dump( $result->errorInfo()); // sert à détecter la moindre erreur dans la fonction
+                $_SESSION["error"]["bdd"] = $result->errorInfo()[2]; // sert à faire apparaître l'erreur dû à un mail identique par ex 
+                return false;
+            }else {
+                return $this;
+            }
         }
 
 
@@ -196,16 +202,31 @@
         }
 
 
+        public function update() {
+
+
+
+        }
+
+
+        public function delete() {
+
+
+
+        }
+
+
         public function selectByMail() {
 
             $query = "SELECT id_client, mail, mdp FROM clients;";
-            $this->dbConnect();
             $result = $this->pdo->prepare($query);
 
             $result->bindValue("mail", $this->mail, \PDO::PARAM_STR);
-            $result->execute();
+            if($result->execute()) 
 
-            return $result->fecth();
+            var_dump($result->errorInfo());
+
+            return $result->fetch();
 
         }
 

@@ -41,6 +41,11 @@ class RDV {
         $this->motif = $motif;
     }
     /* Fin des setters */
+
+
+    
+
+
 }
 
 ?>

@@ -32,7 +32,7 @@ switch ($route) {
     break;
     case "connect" : $toTemplate = connectUser();
     break;
-    case "insert_client" : $toTemplate = insertClient();
+    case "insert_client" : insertClient();
     break;
     case "deconnect" : $toTemplate = deconnectUser();
     break;

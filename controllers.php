@@ -23,9 +23,7 @@ function showMembre() {
     if(!isset($_SESSION["id_client"])) {
         header("Location:index.php?route=showhome");
     }
-    return [
-        "template" => "espace_membre.php"
-    ];
+    return ["template" => "espace_membre.php"];
 }
 
 
@@ -74,6 +72,25 @@ function connectUser() {
 
     header("location:index.php?route=showform");
     exit;
+
+}
+
+
+
+function insertClient() {
+
+    $client = new Modeles\Client();
+        if(preg_match("#^.{1,50}$#", trim($_POST["client"]))) { // la fonction trim() sert à supprimer les espaces au début et à la fin
+            $client->setNom($_POST["client"]); // récupérer les données fournis par l'utilisateur
+            if(!$client->select()){
+                $client = $client->insert();
+            }              
+        }else {
+            echo "La connexion est incorrect";
+        }
+
+        
+        header("Location:index.php?route=espace_membre");
 
 }
 

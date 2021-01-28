@@ -38,11 +38,9 @@ require_once "index.php";
             
     <div class="creation_compte">
 
-                <form action=" " method="POST">
                     <h2>Vous n'avez pas de compte?</h2>
 
-                    <input type="submit" id='submit' value='Créer un compte' >
-                </form>
+                    <button type="button">Créer un compte</button>
             </div>
     
 </div>

@@ -60,7 +60,7 @@
                     <ul>
                         <li>Louer</li>
                         <li>Acheter</li>
-                        <li>Estimer</li>
+                        <li id="rouge">Estimer</li>
                     </ul>
                 </nav>
 
@@ -70,44 +70,46 @@
 
             <form action="">
 
-            <input type="text" placeholder="Adresse de votre bien" name="recherche" id="adresse_bien">
-
-            <ul>
-                
-                <div id="cadre_estimer">
-                    <li id="estimer"><img src="images/mains_serrees.png" alt="">Estimer le prix de vente</li>
-                    <li id="loyer">Estimer mon loyer</li>
-                </div>
-            </ul>
+                <input type="text" placeholder="Adresse de votre bien" name="recherche" id="adresse_bien">
 
             </form>
 
-        </div>
+            <div id="cadre_estimer">
+
+                <button type="button" id="estimer"><img src="images/search.png">Estimer le prix de vente</button>
+                <button type="button" id="loyer">Estimer mon loyer</button>
+                
+            </div>
+
 
         <h2 class="votre_bien"><a href="#">Votre bien</a></h2>
 
 
-        <div class="conteneur3">
-
-            <div class="bien">
-
-                <h1>Estimer votre bien</h1>
-
-            </div>
-
-            <div class="video">
-
-                <h1>Estimer votre bien en vidéo</h1>
-
-            </div>
-
-            <div class="alerte_mail">
-
-                <h1>Créer une alerte mail</h1>
-
-            </div>
-
         </div>
+
+            <div class="conteneur3">
+
+                <div class="bien">
+
+                    <h1>Estimer votre bien</h1>
+
+                </div>
+
+                <div class="video">
+
+                    <h1>Estimer votre bien en vidéo</h1>
+
+                </div>
+
+                <div class="alerte_mail">
+
+                    <h1>Créer une alerte mail</h1>
+
+                </div>
+
+            </div>
+
+        
 
         <div class="conteneur4">
 

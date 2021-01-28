@@ -152,7 +152,30 @@
         // FONCTIONS INTERNES À LA CLASSE
 
 
-        public function insertClient(){
+        // sert à afficher la base de données
+        public function select() {
+
+       
+        $query = "SELECT id_client FROM clients WHERE id_client = :id-client;";
+        $result  = $this->pdo->prepare($query);
+
+        // Prévenir l'injection SQL, "voir cours et doc" 
+        // ajout de la fonctionnalité "blindValue" pour associer une valeur à un paramètre 
+        // + voir ci-dessus remplacer $this->nomdelacolonne par :nomdelacolonne
+        $result->bindValue("id_client", $this->id_client, PDO::PARAM_STR);
+
+        $result->execute();
+        $datas = $result->fetch();
+
+        if($datas) {
+            $this->id_client = $datas['id_client'];
+        }
+        return $datas;
+
+    }
+
+
+        public function insert(){
             $query = "INSERT INTO clients(mail, mdp) VALUE (:mail, :mdp);";
 
             $result = $this->pdo->prepare($query);

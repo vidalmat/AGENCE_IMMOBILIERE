@@ -2,7 +2,7 @@
 
 
 
-namespace Models;
+namespace Modeles;
 
 
 interface Crud {

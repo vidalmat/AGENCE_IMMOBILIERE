@@ -176,10 +176,14 @@
 
 
         public function insert(){
-            $query = "INSERT INTO clients(mail, mdp) VALUE (:mail, :mdp);";
+            $query = "INSERT INTO clients(nom, prenom, adresse, tel, mail, mdp) VALUE (:nom, :prenom, :adresse, :tel, :mail, :mdp);";
 
             $result = $this->pdo->prepare($query);
 
+            $result->bindValue("nom", $this->nom, \PDO::PARAM_STR);
+            $result->bindValue("prenom", $this->prenom, \PDO::PARAM_STR);
+            $result->bindValue("adresse", $this->adresse, \PDO::PARAM_STR);
+            $result->bindValue("tel", $this->tel, \PDO::PARAM_STR);
             $result->bindValue("mail", $this->mail, \PDO::PARAM_STR);
             $result->bindValue("mdp", $this->mdp, \PDO::PARAM_STR);
 

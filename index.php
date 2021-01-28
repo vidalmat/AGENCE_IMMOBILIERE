@@ -30,11 +30,11 @@ switch ($route) {
     break;
     case "espace_membre" : $toTemplate = showEspaceMembre();
     break;
-    case "connect" : $toTemplate = connectUser();
+    case "connect" : connectUser();
     break;
     case "insert_client" : insertClient();
     break;
-    case "deconnect" : $toTemplate = deconnectUser();
+    case "deconnect" : deconnectUser();
     break;
     default : $toTemplate = showHome(); // fonction par défaut
 

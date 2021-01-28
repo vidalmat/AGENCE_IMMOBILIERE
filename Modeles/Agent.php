@@ -79,17 +79,50 @@ class Agent {
 
 
     // FONCTIONS INTERNES À LA CLASSE
+
+
+    // FONCTIONS INTERNES À LA CLASSE
+
+
+    // sert à afficher la base de données
+    public function select() {
+
+    
+        $query = "SELECT id_rdv FROM rdv WHERE id_rdv = :id-rdv;";
+        $result  = $this->pdo->prepare($query);
+
+        // Prévenir l'injection SQL, "voir cours et doc" 
+        // ajout de la fonctionnalité "blindValue" pour associer une valeur à un paramètre 
+        // + voir ci-dessus remplacer $this->nomdelacolonne par :nomdelacolonne
+        $result->bindValue("id_rdv", $this->id_rdv, PDO::PARAM_STR);
+
+        $result->execute();
+        $datas = $result->fetch();
+
+        if($datas) {
+            $this->id_rdv = $datas['id_rdv'];
+        }
+        return $datas;
+
+    }
+
+
     
     public function insert(){
-        $query = "INSERT INTO agents(mail, mdp) VALUE (:mail, :mdp);";
+        $query = "INSERT INTO agents(nom, prenom, tel, mail, mdp) VALUE (:nom, :prenom, :tel, :mail, :mdp);";
 
         $result = $this->pdo->prepare($query);
 
+        $result->bindValue("nom", $this->nom, \PDO::PARAM_STR);
+        $result->bindValue("prenom", $this->prenom, \PDO::PARAM_STR);
+        $result->bindValue("tel", $this->tel, \PDO::PARAM_STR);
         $result->bindValue("mail", $this->mail, \PDO::PARAM_STR);
         $result->bindValue("mdp", $this->mdp, \PDO::PARAM_STR);
 
         $result->execute();
     }
+
+    
 
 
     public function dbConnect() {

@@ -96,6 +96,25 @@ function insertClient() {
 
 
 
+function insertAgent() {
+
+    $agent = new Modeles\Agent();
+        if(preg_match("#^.{1,50}$#", trim($_POST["agent"]))) { // la fonction trim() sert à supprimer les espaces au début et à la fin
+            $agent->setNom($_POST["agent"]); // récupérer les données fournis par l'utilisateur
+            if(!$agent->select()){
+                $agent = $agent->insert();
+            }              
+        }else {
+            echo "La connexion est incorrect";
+        }
+
+        
+        header("Location:index.php?route=espace_membre");
+
+}
+
+
+
 function deconnectUser() {
 
     $_SESSION = [];

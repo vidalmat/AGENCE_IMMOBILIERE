@@ -15,13 +15,15 @@
 
 
 body{
+    background: rgb(255, 252, 246);
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a:link{
+a{
     text-decoration: none;
+    color: rgb(138, 136, 136);
 }
 
 
@@ -30,7 +32,6 @@ a:link{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border: 1px solid green;
 }
 
 
@@ -38,8 +39,21 @@ a:link{
 .nav_user li{
     list-style-type: none;
     display: inline;
-	list-style: none;
+    list-style: none;
+    font-weight: 700;
+    margin-right: 20px;
 }
+
+
+.nav_user .favoris{
+    color: #0e71b4;
+}
+
+
+.nav_user .mon_compte a{
+    color: #96bf0d;
+}
+
 
 .logo_header{
     width: 20%;
@@ -47,24 +61,27 @@ a:link{
 }
 
 .logo_header img{
-    width: 100%;
+    width: 70%;
+    margin: 10px;
 }
-
-
-
 
 
 .menu_header{
     text-align: center;
-    border: 1px solid red;
+    border-top: 1px solid #96bf0d;
 }
 
 .menu_header li{
-    margin: 8.5em;
+    margin: 3em;
     list-style-type: none;
     display: inline;
     list-style: none;
-    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+}
+
+.menu_header .agence_rouge a{
+    color: #96bf0d;
 }
 
 /* fin du header */ 
@@ -76,6 +93,9 @@ a:link{
 
 /* Bloc recherche */
 
+.conteneur2{
+    margin-bottom: 10em;
+}
 
 .conteneur2 img{
     width: 100%;
@@ -84,7 +104,7 @@ a:link{
 
 .bloc{
     display: flex;
-    background: rgb(206, 206, 250);
+    background: rgb(225, 225, 252);
     justify-content: space-around;
     border-radius: 0.5em 0.5em 0 0;
 } 
@@ -92,11 +112,13 @@ a:link{
 
 .bloc p{
     font-size: 1.5em;
-    height: 20px;
+    height: 10px;
+    line-height: 10px;
 }
 
 .bloc #rouge{
-    background: red;
+    color: #96bf0d;
+    background: #96bf0d;
     margin-right: -4.95em;
     padding-right: 30px;
     padding-left: 30px;
@@ -108,8 +130,7 @@ a:link{
     color: white;
 }
 
-.bloc h2{
-    border: 1px solid green;
+.bloc h1{
     text-align: center;
 }
 
@@ -132,14 +153,14 @@ a:link{
     margin: 5em;
     text-transform: uppercase;
     font-weight: bold;
-    color: rgb(104, 104, 104);
+    color: rgb(138, 136, 136);
 }
 
 
 .bloc_search p{
     text-align: center;
     font-weight: bold;
-    color: rgb(104, 104, 104);
+    color: rgb(138, 136, 136);
 }
 
 
@@ -188,7 +209,7 @@ a:link{
     background: none;
     border: none;
     font-weight: bold;
-    color: rgb(104, 104, 104);
+    color: rgb(138, 136, 136);
 }
 
 
@@ -202,21 +223,21 @@ a:link{
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.6em;
-    background: red;
+    background: #96bf0d;
     text-align: center;
     line-height: 39px;
     font-size: 1em;
 }
 
 
-.votre_bien h2{
+.votre_bien h1{
     margin-bottom: 50px;
     text-decoration: white;
     color: white;
 }
 
 
-.bloc_search h2 a{
+.bloc_search h1 a{
     color: white;
 }
 
@@ -233,11 +254,29 @@ a:link{
 }
 
 
+.conteneur3 .video img{
+    width: 10%;
+    margin-top: -12px;
+}
+
+
+.conteneur3 .bien img{
+    width: 10%;
+    margin-top: -12px;
+}
+
+
+.conteneur3 .alerte_mail img{
+    width: 10%;
+    margin-top: -12px;
+}
+
+
 .conteneur3 .video, .bien, .alerte_mail{
-    justify-content: space-between;
-    width: 20%;
+    width: 18%;
     height: 5.4em;
-    margin: 0.5em;
+    margin-left: 18.5em;
+    margin-top: 28px;
     background: white;
     border-radius: 10px;
     font-size: 0.6em;
@@ -246,6 +285,8 @@ a:link{
     color: rgb(104, 104, 104);
 
 }
+
+
 
 /* Fin bloc recherche */
 
@@ -258,15 +299,118 @@ a:link{
 
 /* Début footer */
 
+footer{
+    background: rgb(75, 75, 75);
+    height: 24.5em;
+}
+
+
+.conteneur6{
+    display: flex;
+}
+
+
+.conteneur6 div{
+    width: 100%;
+}
+
+
+.conteneur6 .par1{
+    width: 41%;
+    margin-top: 2.5em;
+}
+
+
+.conteneur6 .par2{
+    margin-top: 2.5em;
+    margin-left: 3em;
+}
+
+
+.conteneur6 .logo_footer{
+    width: 80%;
+    margin-left: 8em;
+}
+
+.conteneur6 .logo_footer img{
+    width: 45%;
+    margin-left: 10em;
+    margin-top: 3em;
+}
+
+
+.conteneur6 ul{
+    color: rgb(255, 255, 255);
+}
+
+
 .conteneur6 li{
     list-style-type: none;
+    color: rgb(196, 196, 196);
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+
+.bloc_applistore{
+    display: flex;
+    margin-left: 41em;
+    margin-top: 2em;
+}
+
+
+.bloc_applistore p{
+    margin-right: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+
+.bloc_applistore #apple{
+    width: 12%;
+    height: 33px;
+    margin-top: 8px;
+}
+
+
+.bloc_applistore #google{
+    width: 15%;
+    height: 50px;
+}
+
+
+.bloc_applistore #facebook{
+    width: 9%;
+    height: 33px;
+    margin-top: 8px;
+}
+
+
+.bloc_applistore #tweeter{
+    width: 11%;
+    height: 50px;
 }
 
 
 
-.conteneur7 li{
-    list-style-type: none;
+.conteneur7{
+    display: flex;
+    justify-content: center;
 }
+
+
+.conteneur7 p{
+    margin-top: 3em;
+    margin-left: 20px;
+    color: rgb(196, 196, 196);
+    font-size: 0.9em;
+}
+
+
+
+
+
 
 
 

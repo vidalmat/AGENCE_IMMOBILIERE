@@ -22,8 +22,8 @@
         <div class="nav_user">
             <nav>
                 <ul>
-                    <li>Mes favoris</li>
-                    <li><a href="index.php?route=showform">Mon compte</a></li>
+                    <li class="favoris">Mes favoris</li>
+                    <li class="mon_compte"><a href="index.php?route=showform">Mon compte</a></li>
                 </ul>
             </nav>
             
@@ -35,9 +35,13 @@
         <nav>
             <ul>
                 <li><a href="#">Acheter</a></li>
-                <li>Louer</li>
-                <li>Vendre</li>
-                <li>Nos agences</li>
+                <li><a href="#">Louer</a></li>
+                <li><a href="#">Vendre</a></li>
+                <li><a href="#">Estimer</a></li>
+                <li><a href="#">Faire gérer</a></li>
+                <li><a href="#">Syndic</a></li>
+                <li><a href="#">Immobilier professionnel</a></li>
+                <li class="agence_rouge"><a href="#">Nos agences</a></li>
             </ul>
         </nav>
     </div>
@@ -82,33 +86,34 @@
             </div>
 
 
-        <h2 class="votre_bien"><a href="#">Votre bien</a></h2>
+        <h1 class="votre_bien"><a href="#">Votre bien</a></h1>
 
 
         </div>
 
-            <div class="conteneur3">
+        <div class="conteneur3">
 
-                <div class="bien">
+            <div class="bien">
 
-                    <h1>Estimer votre bien</h1>
-
-                </div>
-
-                <div class="video">
-
-                    <h1>Estimer votre bien en vidéo</h1>
-
-                </div>
-
-                <div class="alerte_mail">
-
-                    <h1>Créer une alerte mail</h1>
-
-                </div>
+                <h1><img src="images/ordi.png" >Estimer votre bien</h1>
 
             </div>
 
+            <div class="video">
+
+                <h1><img src="images/maison.png" >Estimer votre bien en vidéo</h1>
+
+            </div>
+
+            <div class="alerte_mail">
+
+                <h1><img src="images/cloche.png" >Créer une alerte mail</h1>
+
+            </div>
+
+        </div>
+
+    </div>
         
 
         <div class="conteneur4">
@@ -124,7 +129,7 @@
         </div>
 
 
-    </div>
+    
 
 
 
@@ -135,21 +140,29 @@
 
     <div class="conteneur6">
 
+
+        <div class="logo_footer">
+
+            <img src="images/logob&w.png" alt="">
+
+        </div>
+
         <div class="par1">
 
             <ul>À découvrir
 
                 <li>Nos conseils</li>
+                <li>Découvrez votre futur quartier</li>
                 <li>Nos actualités</li>
+                <li>Vendez ou louez votre bien</li>
+                <li>Trouvez une agence immobilière</li>
+                <li>Guide et conseils immobiliers</li>
 
             </ul>
 
         </div>
 
-    </div>
-
-
-    <div class="conteneur7">
+    
 
         <div class="par2">
 
@@ -157,6 +170,10 @@
 
                 <li>Notre agence</li>
                 <li>Qui sommes nous</li>
+                <li>Nous contacter</li>
+                <li>Nous recrutons</li>
+                <li>Besoin d'aide?</li>
+                <li>Votre avis nous interesse</li>
 
             </ul>
             
@@ -165,13 +182,32 @@
     </div>
 
 
-    <div class="conteneur8">
+    <div class="par3">
 
-        <div class="par3">
+        <div class="bloc_applistore">
 
-            <p>Applications</p>
-            <img src="images/logo_store.png" alt="logo_store">
-            
+            <p>Retrouvez nous sur :</p>
+
+            <img src="images/logo_apple.png" alt="logo_apple" id="apple">
+
+            <img src="images/logo_playstore.png" alt="logo_playstore" id="google">
+
+        </div>
+
+    </div>
+
+    <div class="conteneur7">
+
+        <div class="mentions">
+            <p>Mentions légales</p>
+        </div>
+
+        <div class="mentions">
+            <p>Politique de confidentialité</p>
+        </div>
+
+        <div class="mentions">
+            <p>Paramétrer les cookies</p>
         </div>
 
     </div>

@@ -167,21 +167,6 @@
         }
 
 
-        public function delete() {
-
-        //     $query = "DELETE FROM clients WHERE  reference = :reference;";
-
-        // $result = $this->pdo->prepare($query);
-
-        // // Prévenir l'injection SQL, "voir cours et doc" 
-        // // ajout de la fonctionnalité "blindValue" pour associer une valeur à un paramètre 
-        // // + voir ci-dessus remplacer $this->nomdelacolonne par :nomdelacolonne
-        // $result->bindValue("reference", $this->reference, PDO::PARAM_STR);
-
-        // return $result->execute();
-
-
-        }
 
 
         public function selectByMail() {

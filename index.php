@@ -43,6 +43,8 @@ switch ($route) {
     break;
     case "insert_bien" : insertBien();
     break;
+    case "sup_bien" : supBien();
+    break;
     case "deconnect" : deconnectUser();
     break;
     default : $toTemplate = showHome(); // fonction par défaut

@@ -165,6 +165,18 @@ function insertBien() {
 
 
 
+function supBien() {
+
+    $bien = new Modeles\Bien();
+    $bien->setIdBien($_GET["id_bien"]);
+    $bien->delete();
+
+    header("Location:index.php?route=espace_agent");
+    exit;
+}
+
+
+
 function deconnectUser() {
 
     $_SESSION = [];

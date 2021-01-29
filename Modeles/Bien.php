@@ -25,7 +25,7 @@ class Bien extends DbConnect {
         return $this->image;
     }
 
-    public function getIdAgent(): int {
+    public function getIdBien(): int {
         return $this->id_bien;
     }
 
@@ -37,7 +37,7 @@ class Bien extends DbConnect {
         return $this->adresse;
     }
 
-    public function getPrix(): int {
+    public function getPrix(): string {
         return $this->tel;
     }
 
@@ -67,7 +67,7 @@ class Bien extends DbConnect {
         $this->adresse = $adresse;
     }
 
-    public function setPrix(int $prix) {
+    public function setPrix(string $prix) {
         $this->prix = $prix;
     }
     /* Fin des setters */
@@ -137,6 +137,24 @@ class Bien extends DbConnect {
             return $this;
         }
     }
+
+
+
+    public function delete() {
+
+        $query = "DELETE FROM biens WHERE  id_bien = :id_bien;";
+
+        $result = $this->pdo->prepare($query);
+
+        // Prévenir l'injection SQL, "voir cours et doc" 
+        // ajout de la fonctionnalité "blindValue" pour associer une valeur à un paramètre 
+        // + voir ci-dessus remplacer $this->nomdelacolonne par :nomdelacolonne
+        $result->bindValue("id_bien", $this->id_bien, PDO::PARAM_STR);
+
+        return $result->execute();
+
+
+        }
 
     
 

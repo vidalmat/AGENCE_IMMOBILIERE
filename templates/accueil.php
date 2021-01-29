@@ -54,7 +54,7 @@
 
     <div class="conteneur2">
 
-        <img src="images/img_accueil_flou2.jpg" alt="photo accueil">
+        
 
         <div class="bloc_search">
 

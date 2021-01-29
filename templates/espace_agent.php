@@ -47,7 +47,7 @@ $biens = $toTemplate["biens"];
         <td><?= $bien["nom"] ?></td>
         <td><?= $bien["adresse"] ?></td>
         <td><?= $bien["prix"] ?></td>
-        <td>Modifier | Supprimer</td>
+        <td>Modifier | <a href="index.php?route=sup_bien&id_bien=<?= $bien["id_bien"] ?>"> Supprimer</a></td>
         </tr>
 
     <?php endforeach ?>

@@ -94,7 +94,13 @@ a{
 /* Bloc recherche */
 
 .conteneur2{
+    background-image: url("../images/img_accueil_flou.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
     margin-bottom: 10em;
+    top: 100px;
+    border: 1px solid red;
 }
 
 .conteneur2 img{
@@ -139,12 +145,11 @@ a{
     position: relative;
     background: white;
     width: 50%;
-    height: 35%;
+    height: 45%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -25em;
-    margin-bottom: 2em;
     border-radius: 0.5em;
+    top: 25vh;
 }
 
 
@@ -251,6 +256,7 @@ a{
 
 .conteneur3{
     display: flex;
+    margin-top: 30vh;
 }
 
 
@@ -286,6 +292,10 @@ a{
 
 }
 
+
+.conteneur4{
+    margin-top: 70vh;
+}
 
 
 /* Fin bloc recherche */

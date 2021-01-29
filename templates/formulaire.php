@@ -54,7 +54,7 @@
                 <input type="number" placeholder="Téléphone" name="tel" id="telephone">
                 <input type="text" placeholder="Email" name="mail" id="mail">
                 <input type="password" placeholder="Mot de passe" name="mdp" required >
-                <input type="submit" value="S'inscrire" name="inscription" id="inscription">
+                <input type="submit" value="S'inscrire" id="inscription">
 
 
 

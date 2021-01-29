@@ -21,11 +21,14 @@ function showForm() {
 
 function showEspaceAgent() {
 
+    $bien = new Modeles\Bien();
+    $bien = $bien->selectAll();
     // if(!isset($_SESSION["id_agent"])) {
     //     header("Location:index.php?route=showhome");
     // }
     return [
-        "template" => "templates/espace_agent.php"
+        "template" => "templates/espace_agent.php",
+        "biens" => $bien
     ];
 
 }
@@ -140,14 +143,19 @@ function insertAgent() {
 function insertBien() {
 
     var_dump($_POST);
+    var_dump($_FILES);
 
+    $bien = new Modeles\Bien();
+    $bien->setIdCategorie($_POST["categorie"]);
+    $bien->setNom($_POST["nom"]);
+    $bien->setAdresse($_POST["adresse"]);
+    $bien->setPrix($_POST["prix"]);
 
-    $agent = new Modeles\Bien();
-    $agent->setIdCategorie($_POST["categorie"]);
-    $agent->setNom($_POST["nom"]);
-    $agent->setAdresse($_POST["adresse"]);
-    $agent->setPrix($_POST["prix"]);
-    $agent->insert();
+    // variable pour nouvelle image
+    $uploader = new Conf\UploadImage($_FILES["image"], 1200, 1200); // 1200 correspond au width et height qui veut dire 1200px
+
+    $bien->setImage($uploader->set_image());
+    $bien->insert();
 
 
     header("Location:index.php?route=showbien");

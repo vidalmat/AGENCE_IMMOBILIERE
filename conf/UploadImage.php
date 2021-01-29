@@ -1,5 +1,7 @@
 <?php
 
+namespace Conf;
+ 
 class UploadImage {
     
     private $imageFile;
@@ -28,10 +30,10 @@ class UploadImage {
 
         /* Génère l'image fullsize $fullsizeimage_new vers le fichier $filename_new en fonction de son mime : */
         switch ($this->imageFile['type']) {
-            case 'image/png'  : imagepng($img_new, realpath('img').'/'. $filename_new, 0);  break;// 0 == compression minimum
-            case 'image/jpeg' : imagejpeg($img_new, realpath('img').'/'. $filename_new, 100); break;// 100 == compression maximum
-            case 'image/gif'  : imagegif($img_new, realpath('img').'/'. $filename_new);  break;
-        }/*-- finswitch */
+            case 'image/png'  : imagepng($img_new, realpath('upload').'/'. $filename_new, 0);  break;// 0 == compression minimum
+            case 'image/jpeg' : imagejpeg($img_new, realpath('upload').'/'. $filename_new, 100); break;// 100 == compression maximum
+            case 'image/gif'  : imagegif($img_new, realpath('upload').'/'. $filename_new);  break;
+        }/*-- fin switch */
 
         return $filename_new;
     

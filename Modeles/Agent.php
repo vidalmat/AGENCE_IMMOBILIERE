@@ -152,7 +152,7 @@ class Agent extends DbConnect {
     }
 
 
-    public function selectByMail() {
+    public function selectByMailFromAgent() {
 
         $query = "SELECT id_agent, mail, mdp FROM agents;";
         $this->dbConnect();
@@ -164,6 +164,7 @@ class Agent extends DbConnect {
         return $result->fetch();
 
     }
+
 
 }
     

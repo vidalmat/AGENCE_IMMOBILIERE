@@ -9,6 +9,7 @@ use PDO;
 class Bien extends DbConnect {
 
     private $id_categorie;
+    private $image;
     private $id_bien;
     private $nom;
     private $adresse;
@@ -18,6 +19,10 @@ class Bien extends DbConnect {
 
     public function getIdCategorie(): int {
         return $this->id_categorie;
+    }
+
+    public function getImage(): ?string {
+        return $this->image;
     }
 
     public function getIdAgent(): int {
@@ -42,6 +47,11 @@ class Bien extends DbConnect {
 
     public function setIdCategorie(int $id_categorie) {
         $this->id_categorie = $id_categorie;
+    }
+
+
+    public function setImage(string $image) {
+        $this->image = $image;
     }
 
 
@@ -71,7 +81,7 @@ class Bien extends DbConnect {
     // variable contenant la requête SQL sous la forme d'une chaîne de caractère
     public function selectAll() {
 
-        $query = "SELECT id_bien, nom, adresse, prix FROM biens;";
+        $query = "SELECT id_bien, id_categorie, image, nom, adresse, prix FROM biens;";
 
         // je récupère un objet de type PDOStatement => requête préparée
         $result = $this->pdo->prepare($query);
@@ -109,11 +119,12 @@ class Bien extends DbConnect {
     }
 
     public function insert(){
-        $query = "INSERT INTO biens (id_categorie, nom, adresse, prix) VALUE (:id_categorie, :nom, :adresse, :prix);";
+        $query = "INSERT INTO biens (id_categorie, image, nom, adresse, prix) VALUE (:id_categorie, :image, :nom, :adresse, :prix);";
 
         $result = $this->pdo->prepare($query);
 
         $result->bindValue("id_categorie", $this->id_categorie, \PDO::PARAM_STR);
+        $result->bindValue("image", $this->image, \PDO::PARAM_STR);
         $result->bindValue("nom", $this->nom, \PDO::PARAM_STR);
         $result->bindValue("adresse", $this->adresse, \PDO::PARAM_STR);
         $result->bindValue("prix", $this->prix, \PDO::PARAM_STR);

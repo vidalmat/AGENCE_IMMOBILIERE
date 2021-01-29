@@ -10,7 +10,7 @@
 ?>
 
 
-<form action="index.php?route=insert_bien" method="POST">
+<form action="index.php?route=insert_bien" method="POST" enctype="multipart/form-data">
 
     <select name="categorie" id="">
         <option value="1">Vente</option>
@@ -19,16 +19,36 @@
     <input type="text" placeholder="Nom" name="nom" id="nom">
     <input type="text" placeholder="Adresse" name="adresse" id="adresse">
     <input type="text" placeholder="Prix" name="prix" id="prix">
+    <input type="file" name="image">
     <input type="submit" value="Ajouter un bien" id="ajout_bien">
 
 </form>
 
 
-<h2>Ajouter une formule</h2>
 
-<form action="index.php?route=insert_bien" method="POST" enctype="multipart/form-data">
+<!--Affichage des biens-->
 
-    <input type="file" name="image">
-    <input type="submit" value="Ajouter une nouvelle photo">
+<?php
+$biens = $toTemplate["biens"];
+?>
 
-</form>
+<table>
+    <tr>
+        <th>Image</th>
+        <th>Nom</th>
+        <th>Adresse</th>
+        <th>Prix</th>
+        <th>Action</th>
+    </tr>
+
+    <?php foreach($biens as $bien): ?>
+        <tr>
+        <td><img width="120" src="upload/<?= $bien["image"] ?>" alt="image"></td>
+        <td><?= $bien["nom"] ?></td>
+        <td><?= $bien["adresse"] ?></td>
+        <td><?= $bien["prix"] ?></td>
+        <td>Modifier | Supprimer</td>
+        </tr>
+
+    <?php endforeach ?>
+</table>

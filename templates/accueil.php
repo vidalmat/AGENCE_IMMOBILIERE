@@ -80,7 +80,7 @@
 
             <div id="cadre_estimer">
 
-                <button type="button" id="estimer"><img src="images/search.png">Estimer le prix de vente</button>
+                <button type="button" id="estimer"><img src="images/search.png" alt="search">Estimer le prix de vente</button>
                 <button type="button" id="loyer">Estimer mon loyer</button>
                 
             </div>
@@ -95,19 +95,19 @@
 
             <div class="bien">
 
-                <h1><img src="images/ordi.png" >Estimer votre bien</h1>
+                <h1><img src="images/ordi.png" alt="ordi">Estimer votre bien</h1>
 
             </div>
 
             <div class="video">
 
-                <h1><img src="images/maison.png" >Estimer votre bien en vidéo</h1>
+                <h1><img src="images/maison.png" alt="maison">Estimer votre bien en vidéo</h1>
 
             </div>
 
             <div class="alerte_mail">
 
-                <h1><img src="images/cloche.png" >Créer une alerte mail</h1>
+                <h1><img src="images/cloche.png" alt="cloche">Créer une alerte mail</h1>
 
             </div>
 

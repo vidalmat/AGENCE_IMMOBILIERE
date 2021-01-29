@@ -43,6 +43,25 @@ class RDV {
     /* Fin des setters */
 
 
+
+    // variable contenant la requête SQL sous la forme d'une chaîne de caractère
+    public function selectAll() {
+
+        $query = "SELECT id_rdv, date_rdv, motif FROM rdv;";
+
+        // je récupère un objet de type PDOStatement => requête préparée
+        $result = $this->pdo->prepare($query);
+
+        // exécution de la requête préparée - $result récupère le jeu de résultat 
+        $result->execute();
+
+        //
+        $datas = $result->fetchAll();
+
+        return $datas;
+    }
+
+
     public function select() {
 
        

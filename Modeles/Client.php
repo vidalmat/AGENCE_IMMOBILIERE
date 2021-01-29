@@ -89,67 +89,25 @@
         /* Fin des setters */
 
 
-
-        // function saveUser() {
-
-        //     //echo "Je récupère le contenu de mon fichier users.json :<br>";
-        //     $contenu = (file_exists("datas/users.json"))? file_get_contents("datas/users.json") : "";
-        //     //var_dump($contenu);
-    
-        //     //echo "Je décode mon JSON en structure PHP (tableau associatif) :<br>";
-        //     $users = json_decode($contenu);
-        //     //var_dump($users);
-       
-        //     $users = (is_array($users))? $users : [];
-    
-        //     //echo "Je crée un tableau avec mon nouvel objet courant car les $this ne peut pas être encoder après un json-encode: <br>";
-        //     $user = get_object_vars($this);
-        //     //var_dump($user);
-    
-        //     //echo "J'ajoute ce livre à mon tableau de users (\$users)";
-        //     array_push($users, $user);
-        //     //var_dump($users);
-    
-        //     //echo "J'ouvre mon fichier users.json <br>";
-        //     $handle = fopen("datas/users.json", "w");
-    
-        //     //echo "Je réencode mon tableau au format JSON : <br>";
-        //     $json = json_encode($users);
-        //     //var_dump($json);
-    
-        //     //echo "J'écris ma chaîne JSON dans mon fichier users.json<br>";
-        //     fwrite($handle, $json);
-        //     //echo "Je ferme mon fichier !";
-        //     fclose($handle);
-        // }
-
-
-
-        // function insertUser(): array {
-
-        //     require_once "modeles/Client.php";
-        
-        //     //encryptage du mdp
-        //     $mdp = password_hash($_POST["mdp"], PASSWORD_DEFAULT, ['cost => 12']);
-        
-        //     $user = new Client($_POST["mail"],$mdp);
-        //     $user->saveUser();
-        
-        //     // redirection du la page de co au lieu de la page d'accueil
-        //     header("Location:index.php?page=connect");
-        //     exit;
-        // }
-        
-        // function showFormCo(): array {
-        
-        //     return ["template" => "formulaire.php"];
-        
-        // }
-        
-    
-
-
         // FONCTIONS INTERNES À LA CLASSE
+
+
+        // variable contenant la requête SQL sous la forme d'une chaîne de caractère
+    public function selectAll() {
+
+        $query = "SELECT id_client, nom, prenom, adresse, mail, tel, mdp FROM clients;";
+
+        // je récupère un objet de type PDOStatement => requête préparée
+        $result = $this->pdo->prepare($query);
+
+        // exécution de la requête préparée - $result récupère le jeu de résultat 
+        $result->execute();
+
+        //
+        $datas = $result->fetchAll();
+
+        return $datas;
+    }
 
 
         // sert à afficher la base de données

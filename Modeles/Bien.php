@@ -8,12 +8,18 @@ use PDO;
 
 class Bien extends DbConnect {
 
+    private $id_categorie;
     private $id_bien;
     private $nom;
     private $adresse;
     private $prix;
 
     // Construction des getters
+
+    public function getIdCategorie(): int {
+        return $this->id_categorie;
+    }
+
     public function getIdAgent(): int {
         return $this->id_bien;
     }
@@ -33,6 +39,12 @@ class Bien extends DbConnect {
     /* Fin des getters */
 
     // Construction des setters
+
+    public function setIdCategorie(int $id_categorie) {
+        $this->id_categorie = $id_categorie;
+    }
+
+
     public function setIdBien(int $id_bien) {
         $this->id_bien = $id_bien;
     }
@@ -54,6 +66,24 @@ class Bien extends DbConnect {
 
 
     // FONCTIONS INTERNES À LA CLASSE
+
+
+    // variable contenant la requête SQL sous la forme d'une chaîne de caractère
+    public function selectAll() {
+
+        $query = "SELECT id_bien, nom, adresse, prix FROM biens;";
+
+        // je récupère un objet de type PDOStatement => requête préparée
+        $result = $this->pdo->prepare($query);
+
+        // exécution de la requête préparée - $result récupère le jeu de résultat 
+        $result->execute();
+
+        //
+        $datas = $result->fetchAll();
+
+        return $datas;
+    }
 
 
     // sert à afficher la base de données
@@ -79,10 +109,11 @@ class Bien extends DbConnect {
     }
 
     public function insert(){
-        $query = "INSERT INTO bien(nom, adresse, prix) VALUE (:nom, :adresse, :prix);";
+        $query = "INSERT INTO biens (id_categorie, nom, adresse, prix) VALUE (:id_categorie, :nom, :adresse, :prix);";
 
         $result = $this->pdo->prepare($query);
 
+        $result->bindValue("id_categorie", $this->id_categorie, \PDO::PARAM_STR);
         $result->bindValue("nom", $this->nom, \PDO::PARAM_STR);
         $result->bindValue("adresse", $this->adresse, \PDO::PARAM_STR);
         $result->bindValue("prix", $this->prix, \PDO::PARAM_STR);

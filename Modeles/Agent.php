@@ -81,7 +81,23 @@ class Agent extends DbConnect {
     // FONCTIONS INTERNES À LA CLASSE
 
 
-    // FONCTIONS INTERNES À LA CLASSE
+
+    // variable contenant la requête SQL sous la forme d'une chaîne de caractère
+    public function selectAll() {
+
+        $query = "SELECT id_agent, nom, prenom, mail, tel, mdp FROM agents;";
+
+        // je récupère un objet de type PDOStatement => requête préparée
+        $result = $this->pdo->prepare($query);
+
+        // exécution de la requête préparée - $result récupère le jeu de résultat 
+        $result->execute();
+
+        //
+        $datas = $result->fetchAll();
+
+        return $datas;
+    }
 
 
     // sert à afficher la base de données

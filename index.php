@@ -33,11 +33,15 @@ switch ($route) {
     break;
     case "espace_membre" : $toTemplate = showEspaceMembre();
     break;
+    case "showbien" : $toTemplate = showBien();
+    break;
     case "connect" : connectUser();
     break;
     case "insert_agent" : insertAgent();
     break;
     case "insert_client" : insertClient();
+    break;
+    case "insert_bien" : insertBien();
     break;
     case "deconnect" : deconnectUser();
     break;

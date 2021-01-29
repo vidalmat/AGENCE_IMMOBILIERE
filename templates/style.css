@@ -51,7 +51,7 @@ a{
 
 
 .nav_user .mon_compte a{
-    color: #96bf0d;
+    color: #779b00;
 }
 
 
@@ -376,22 +376,8 @@ footer{
 
 .bloc_applistore #google{
     width: 15%;
-    height: 50px;
+    height: 49px;
 }
-
-
-.bloc_applistore #facebook{
-    width: 9%;
-    height: 33px;
-    margin-top: 8px;
-}
-
-
-.bloc_applistore #tweeter{
-    width: 11%;
-    height: 50px;
-}
-
 
 
 .conteneur7{

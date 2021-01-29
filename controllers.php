@@ -21,9 +21,9 @@ function showForm() {
 
 function showEspaceAgent() {
 
-    if(!isset($_SESSION["id_agent"])) {
-        header("Location:index.php?route=showhome");
-    }
+    // if(!isset($_SESSION["id_agent"])) {
+    //     header("Location:index.php?route=showhome");
+    // }
     return [
         "template" => "templates/espace_agent.php"
     ];
@@ -37,6 +37,17 @@ function showEspaceMembre() {
     }
     return [
         "template" => "templates/espace_membre.php"
+    ];
+}
+
+
+
+function showBien() {
+    if(!isset($_SESSION["id_bien"])) {
+        header("Location:index.php?route=showhome");
+    }
+    return [
+        "template" => "templates/page_bien.php"
     ];
 }
 
@@ -120,6 +131,26 @@ function insertAgent() {
 
 
     header("Location:index.php?route=showformagent");
+    exit;
+
+}
+
+
+
+function insertBien() {
+
+    var_dump($_POST);
+
+
+    $agent = new Modeles\Bien();
+    $agent->setIdCategorie($_POST["categorie"]);
+    $agent->setNom($_POST["nom"]);
+    $agent->setAdresse($_POST["adresse"]);
+    $agent->setPrix($_POST["prix"]);
+    $agent->insert();
+
+
+    header("Location:index.php?route=showbien");
     exit;
 
 }

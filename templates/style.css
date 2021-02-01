@@ -346,8 +346,9 @@ a{
 /* Début du slide */
 
 .conteneur4{
-    border: 1px solid red;
+    border: 1.5px solid rgb(165, 165, 165);
     display: flex;
+    background:  rgb(104, 104, 104);
     width: 70%;
     height: 45vh;
     margin-right: auto;
@@ -366,12 +367,24 @@ a{
 
 .conteneur4 .descr_maison{
     width: 110%;
-    font-weight: 600;
+    font-weight: 400;
+    background: rgb(68, 68, 68);
+}
+
+
+.band_blanche{
+    position: relative;
+    top: -19px;
+    background: white;
+    height: 8em;
+    border-left: 1em rgb(104, 104, 104);
 }
 
 
 .descr_maison .text_gris{
-    margin-left: 20px;
+    position: relative;
+    margin-left: 15px;
+    top: 4vh;
     font-style: italic;
     font-size: 1.2em;
     color: rgb(104, 104, 104);
@@ -380,31 +393,49 @@ a{
 
 .descr_maison .text_vert{
     position: relative;
-    margin-left: 20px;
+    top: 1.5vh;
+    margin-left: 15px;
     font-size: 1.2em;
-    color: rgb(104, 104, 104);
     color: #96bf0d;
 }
 
 
 .descr_maison .fond_gris{
     position: relative;
-    background: rgb(104, 104, 104);
+    top: -10px;
+    margin: 5px;
     color: white;
-    font-size: 0.9em;
+    font-size: 15px;
     font-weight: normal;
+    
 }
 
 
 .band_selection{
     display: flex;
     position: relative;
-    top: 9.4vh;
+    height: 7vh;
+    top: 3em;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
     justify-content: space-between;
     background:#96bf0d;
     color: white;
+}
+
+
+.band_selection p{
+    margin-right: 20px;
+    border: 1px solid red;
+}
+
+
+.band_selection img{
+    width: 5%;
+    height: 80%;
+    margin-left: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
 }
 
 

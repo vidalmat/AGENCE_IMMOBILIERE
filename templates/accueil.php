@@ -134,14 +134,21 @@
 
             <div class="descr_maison">
 
-                <p class="text_gris">Appartement standing ascenseur et vue</p>
-                <p class="text_vert">Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+                <div class="band_blanche">
+                    <p class="text_gris">Appartement standing ascenseur et vue</p>
+                    <p class="text_vert">Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+                </div>
+
                 <p class="fond_gris">Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
                     Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
                 </p>
+                
                 <div class="band_selection">
-                    <p>Sélectionner</p>
+
+                    <p>Sélectionner<img src="images/etoile.png" alt="etoile"></p>
+
                     <p>Voir le bien</p>
+                        
                 </div>
 
             </div>

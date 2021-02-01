@@ -19,6 +19,15 @@ function showForm() {
 
 
 
+// Fonction d'affichage de la page formulaire (formulaire_agent.php)
+function showFormAgent() {
+
+    return ["template" => "templates/formulaire_agent.php"];
+}
+
+
+
+
 function showEspaceAgent() {
 
     $bien = new Modeles\Bien();
@@ -46,11 +55,14 @@ function showEspaceMembre() {
 
 
 function showBien() {
+    $bien = new Modeles\Bien();
+    $bien = $bien->selectAll();
     if(!isset($_SESSION["id_bien"])) {
         header("Location:index.php?route=showhome");
     }
     return [
-        "template" => "templates/page_bien.php"
+        "template" => "templates/page_bien.php",
+        "biens" => $bien
     ];
 }
 
@@ -97,6 +109,47 @@ function connectUser() {
 
 
 
+
+function connectAgent() {
+
+    // L'utilisateur envoie ses emails et mot de passe
+    // Reçues dans $_POST["mail"] et $_POST["password"]
+    // Il s'agit de : 
+    // 1) Vérifier s'il existe un utilisateur enregistré correspondant à l'adresse mail 
+    $user = new Modeles\Agent();
+    $user->setMail($_POST["mail"]);
+    $verif = $user->selectByMail();
+
+    var_dump($verif);
+
+
+    // 2) Vérifier, si oui, si les mots de passe coïcident
+    if($verif) {
+
+        // 3) Si tout est ok, on place l'utilisateur en session
+        if(password_verify($_POST["mdp"], $verif["mdp"])) {
+
+            //Je peux connecter mon utilisateur
+            $_SESSION["id_agent"] = $verif["id_agent"];
+            $_SESSION["mail"] = $verif["mail"];
+
+            // 4) On renvoie sur son espace perso
+            header("location:index.php?route=espace_agent");
+            exit;
+
+        }else {
+            echo "Le mot de passe est incorrect";
+        }
+
+    }
+
+    // header("location:index.php?route=showformagent");
+    exit;
+
+}
+
+
+
 function insertClient() {
         
     var_dump($_POST);
@@ -133,7 +186,7 @@ function insertAgent() {
     $agent->insert();
 
 
-    header("Location:index.php?route=showformagent");
+    header("Location:index.php?route=espace_agent");
     exit;
 
 }

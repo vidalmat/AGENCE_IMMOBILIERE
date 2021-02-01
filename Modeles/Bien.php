@@ -100,7 +100,7 @@ class Bien extends DbConnect {
     public function select() {
 
     
-        $query = "SELECT id_bien FROM bien WHERE id_bien = :id_bien;";
+        $query = "SELECT id_bien FROM biens WHERE id_bien = :id_bien;";
         $result  = $this->pdo->prepare($query);
 
         // Prévenir l'injection SQL, "voir cours et doc" 

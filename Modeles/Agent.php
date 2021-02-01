@@ -166,6 +166,23 @@ class Agent extends DbConnect {
     }
 
 
+
+
+    public function selectByMail() {
+
+        $query = "SELECT id_agent, mail, mdp FROM agents;";
+        $result = $this->pdo->prepare($query);
+
+        $result->bindValue("mail", $this->mail, \PDO::PARAM_STR);
+        if($result->execute()) 
+
+        var_dump($result->errorInfo());
+
+        return $result->fetch();
+
+    }
+
+
 }
     
     

@@ -142,7 +142,7 @@
                 <p class="fond_gris">Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
                     Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
                 </p>
-                
+
                 <div class="band_selection">
 
                     <p>Sélectionner<img src="images/etoile.png" alt="etoile"></p>

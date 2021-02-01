@@ -29,6 +29,8 @@ switch ($route) {
     break;
     case "showform" : $toTemplate = showForm();
     break;
+    case "showformagent" : $toTemplate = showFormAgent();
+    break;
     case "espace_agent" : $toTemplate = showEspaceAgent();
     break;
     case "espace_membre" : $toTemplate = showEspaceMembre();
@@ -36,6 +38,8 @@ switch ($route) {
     case "showbien" : $toTemplate = showBien();
     break;
     case "connect" : connectUser();
+    break;
+    case "connect_agent" : connectAgent();
     break;
     case "insert_agent" : insertAgent();
     break;

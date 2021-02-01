@@ -333,12 +333,6 @@ a{
     color: rgb(104, 104, 104);
 }
 
-
-.conteneur4{
-    margin-top: 70vh;
-}
-
-
 /* Fin bloc recherche */
 
 
@@ -377,7 +371,6 @@ a{
     top: -19px;
     background: white;
     height: 8em;
-    border-left: 1em rgb(104, 104, 104);
 }
 
 
@@ -413,25 +406,29 @@ a{
 
 .band_selection{
     display: flex;
+    justify-content: space-between;
     position: relative;
     height: 7vh;
     top: 3em;
-    padding-left: 10px;
-    padding-right: 20px;
-    justify-content: space-between;
     background:#96bf0d;
     color: white;
 }
 
 
 .band_selection p{
-    margin-right: 20px;
+    width: 30%;
+    margin-left: 5px;
     border: 1px solid red;
 }
 
 
+.band_selection p:last-child{
+    padding-left: 20px;
+}
+
+
 .band_selection img{
-    width: 5%;
+    width: 8%;
     height: 80%;
     margin-left: 10px;
     border: 2px solid white;

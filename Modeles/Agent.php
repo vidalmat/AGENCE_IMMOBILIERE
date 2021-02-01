@@ -125,7 +125,7 @@ class Agent extends DbConnect {
 
     
     public function insert(){
-        $query = "INSERT INTO agents(nom, prenom, tel, mail, mdp) VALUE (:nom, :prenom, :tel, :mail, :mdp);";
+        $query = "INSERT INTO agents(nom, prenom, mail, tel, mdp) VALUE (:nom, :prenom, :mail, :tel, :mdp);";
 
         $result = $this->pdo->prepare($query);
 
@@ -150,22 +150,6 @@ class Agent extends DbConnect {
     public function dbConnect() {
         $this->pdo = new PDO("mysql:host=localhost:3306;dbname=tp_agence;charset=utf8");
     }
-
-
-    public function selectByMailFromAgent() {
-
-        $query = "SELECT id_agent, mail, mdp FROM agents;";
-        $this->dbConnect();
-        $result = $this->pdo->prepare($query);
-
-        $result->bindValue("mail", $this->mail, \PDO::PARAM_STR);
-        $result->execute();
-
-        return $result->fetch();
-
-    }
-
-
 
 
     public function selectByMail() {

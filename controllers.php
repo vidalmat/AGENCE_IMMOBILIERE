@@ -186,7 +186,7 @@ function insertAgent() {
     $agent->insert();
 
 
-    header("Location:index.php?route=espace_agent");
+    header("Location:index.php?route=showformagent");
     exit;
 
 }

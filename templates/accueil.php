@@ -22,7 +22,7 @@
         <div class="nav_user">
             <nav>
                 <ul>
-                    <li class="favoris">Mes favoris</li>
+                    <li class="favoris"><img src="images/coeur_vert.png" alt="coeur" >favoris</li>
                     <li class="mon_compte"><a href="index.php?route=showform">Mon compte</a></li>
                 </ul>
             </nav>
@@ -81,13 +81,15 @@
             <div id="cadre_estimer">
 
                 <button type="button" id="estimer"><img src="images/search.png" alt="search">Estimer le prix de vente</button>
+
+                <img src="images/cle.png" alt="cle" id="cle">
                 <button type="button" id="loyer">Estimer mon loyer</button>
                 
             </div>
 
-
-        <h1 class="votre_bien"><a href="#">Votre bien</a></h1>
-
+        <div class="mains">
+            <h1 class="votre_bien"><img src="images/mains.png" alt="mains"><a href="#">Votre bien</a></h1>
+        </div>
 
         </div>
 
@@ -95,19 +97,25 @@
 
             <div class="bien">
 
-                <h1><img src="images/ordi.png" alt="ordi">Estimer votre bien</h1>
+                <img src="images/ordi.png" alt="ordi">
+
+                <h1>Estimer votre bien</h1>
 
             </div>
 
             <div class="video">
 
-                <h1><img src="images/maison.png" alt="maison">Estimer votre bien en vidéo</h1>
+                <img src="images/maison.png" alt="maison">
+
+                <h1>Estimer votre bien en vidéo</h1>
 
             </div>
 
             <div class="alerte_mail">
 
-                <h1><img src="images/cloche.png" alt="cloche">Créer une alerte mail</h1>
+                <img src="images/cloche.png" alt="cloche">
+
+                <h1>Créer une alerte mail</h1>
 
             </div>
 
@@ -118,7 +126,25 @@
 
         <div class="conteneur4">
 
-            <p>OFFRE 1</p>
+            <div class="img_maison">
+
+                <img src="images/page1/maison.jpg" alt="maison">
+
+            </div>
+
+            <div class="descr_maison">
+
+                <p class="text_gris">Appartement standing ascenseur et vue</p>
+                <p class="text_vert">Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+                <p class="fond_gris">Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
+                    Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
+                </p>
+                <div class="band_selection">
+                    <p>Sélectionner</p>
+                    <p>Voir le bien</p>
+                </div>
+
+            </div>
 
         </div>
 

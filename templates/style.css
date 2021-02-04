@@ -566,11 +566,11 @@ footer{
 }
 
 .connexion h1{
-    color: #ff6123;
+    color: #96bf0d;
 }
 
 .parconnexion{
-    color: #ff6123;
+    color: #96bf0d;
     margin-top: 10px;
     margin-left: -51px;
 }
@@ -585,7 +585,7 @@ footer{
 }
 
 .connexion #submit{
-    background: #ff572e;
+    background: #96bf0d;
     color: white;
     border-radius: 10px;
     margin-left: 10px;

@@ -156,6 +156,10 @@ class Bien extends DbConnect {
 
         }
 
+
+        public function update() {
+            
+        }
     
 
 

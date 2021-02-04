@@ -10,7 +10,7 @@ interface Crud {
     function selectAll();
     function select();
     function insert();
-    function update();
+    //function update();
     function delete();
 
 

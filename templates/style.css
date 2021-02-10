@@ -358,6 +358,10 @@ a{
     height: 100%;
 }
 
+.img_maison{
+    border: 1px solid red;
+}
+
 
 .conteneur4 .descr_maison{
     width: 110%;

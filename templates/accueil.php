@@ -127,8 +127,13 @@
         <div class="conteneur4">
 
             <div class="img_maison">
-
+            
                 <img src="images/page1/maison.jpg" alt="maison">
+
+                <p>PRIX</p>
+
+                <p>1 470 000€</p>
+
 
             </div>
 

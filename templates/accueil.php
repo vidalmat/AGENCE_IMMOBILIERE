@@ -150,9 +150,9 @@
 
                 <div class="band_selection">
 
-                    <p>Sélectionner<img src="images/etoile.png" alt="etoile"></p>
+                    <p>Sélectionner</p>
 
-                    <p>Voir le bien</p>
+                    <p id="voir">Voir le bien</p>
                         
                 </div>
 

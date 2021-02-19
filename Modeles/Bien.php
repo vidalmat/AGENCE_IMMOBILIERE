@@ -37,8 +37,8 @@ class Bien extends DbConnect {
         return $this->adresse;
     }
 
-    public function getPrix(): string {
-        return $this->tel;
+    public function getPrix(): float {
+        return $this->prix;
     }
 
     /* Fin des getters */
@@ -67,7 +67,7 @@ class Bien extends DbConnect {
         $this->adresse = $adresse;
     }
 
-    public function setPrix(string $prix) {
+    public function setPrix(float $prix) {
         $this->prix = $prix;
     }
     /* Fin des setters */

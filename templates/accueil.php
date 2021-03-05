@@ -64,8 +64,8 @@
                 <p>Louer</p>
                 <p>Acheter</p>
 
-                <div id="rouge">
-                    <p>Estimer</p>
+                <div id="vert">
+                    <p><a href="#"  class="estimer_vert">Estimer</a></p>
                 </div>
 
             </div>
@@ -130,19 +130,33 @@
             
                 <img src="images/page1/maison.jpg" alt="maison">
 
-                <p>PRIX</p>
+                <div class="prix_immo">
 
-                <p>1 470 000€</p>
+                    <p class="prix">PRIX</p>
 
+                    <div class="arrow-right"></div>
+
+                    <p class="euros">1 470 000 €</p>
+
+                </div>
 
             </div>
 
             <div class="descr_maison">
 
                 <div class="band_blanche">
-                    <p class="text_gris">Appartement standing ascenseur et vue</p>
-                    <p class="text_vert">Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+
+                    <div class="trait">
+                        <div class="text_gris">
+                        <p>Appartement standing ascenseur et vue</p>
+                        </div>
+                        <div class="text_vert">
+                        <p>Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+                        </div>
+                    </div>
+                    
                 </div>
+                
 
                 <p class="fond_gris">Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
                     Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
@@ -152,7 +166,7 @@
 
                     <p>Sélectionner</p>
 
-                    <p id="voir">Voir le bien</p>
+                    <p class="voir">Voir le bien</p>
                         
                 </div>
 

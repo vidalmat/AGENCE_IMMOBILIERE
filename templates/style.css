@@ -129,20 +129,39 @@ a{
     font-size: 1.5em;
     height: 10px;
     line-height: 10px;
+    width: 32%;
 }
 
-.bloc #rouge{
+.bloc #vert{
     color: #96bf0d;
     background: #96bf0d;
-    margin-right: -4.95em;
-    padding-right: 30px;
-    padding-left: 30px;
     border-radius: 0 0.5em 0 0;
-    width: 20%;
+    width: 36%;
+    transition: background-color 300ms ease-in-out;
+    -webkit-transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out;
 }
 
-.bloc #rouge p{
+
+.bloc #vert:hover{
+    color: rgb(56, 211, 190);
+    background: rgb(56, 211, 190);
+    border-radius: 0 0.5em 0 0;
+    width: 36%;
+    transition: background-color 300ms ease-in-out;
+    -webkit-transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out;
+}
+
+.estimer_vert{
     color: white;
+}
+
+.bloc #vert p{
+    width: 100%;
+    text-align: center;
 }
 
 .bloc h1{
@@ -186,7 +205,20 @@ a{
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
-    border: 1px solid grey;
+    border: 1px solid rgb(212, 212, 212);
+    transition: background-color 500ms ease-in-out;
+    -webkit-transition: background-color 500ms ease-in-out;
+    -moz-transition: background-color 500ms ease-in-out;
+    -o-transition: background-color 500ms ease-in-out;
+}
+
+
+#adresse_bien:hover{
+    background: rgb(238, 238, 238);
+    transition: background-color 700ms ease-in-out;
+    -webkit-transition: background-color 700ms ease-in-out;
+    -moz-transition: background-color 700ms ease-in-out;
+    -o-transition: background-color 700ms ease-in-out;
 }
 
 
@@ -232,6 +264,22 @@ a{
     border: none;
     font-weight: bold;
     color: rgb(138, 136, 136);
+    transition: background-color 500ms ease-in-out;
+    -webkit-transition: background-color 500ms ease-in-out;
+    -moz-transition: background-color 500ms ease-in-out;
+    -o-transition: background-color 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+
+#cadre_estimer #loyer:hover{
+    background: rgb(56, 211, 190);
+    border-radius: 25px;
+    color: white;
+    transition: background-color 500ms ease-in-out;
+    -webkit-transition: background-color 500ms ease-in-out;
+    -moz-transition: background-color 500ms ease-in-out;
+    -o-transition: background-color 500ms ease-in-out;
 }
 
 
@@ -264,6 +312,11 @@ a{
     text-align: center;
     line-height: 42px;
     font-size: 1em;
+    border-radius: 0.6em;
+    transition: background-color 300ms ease-in-out;
+    -webkit-transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out;
 }
 
 
@@ -279,10 +332,13 @@ a{
 }
 
 
-.bloc_search a:hover{
-    background: rgb(139, 0, 0);
-    border-radius: 0.2em;
-    border: 1px solid  rgb(139, 0, 0);;
+.votre_bien:hover{
+    background: rgb(56, 211, 190);
+    border-radius: 0.6em;
+    transition: background-color 300ms ease-in-out;
+    -webkit-transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out;
 }
 
 
@@ -340,7 +396,7 @@ a{
 /* Début du slide */
 
 .conteneur4{
-    border: 1.5px solid rgb(165, 165, 165);
+    border: 1px solid rgb(165, 165, 165);
     display: flex;
     background:  rgb(104, 104, 104);
     width: 70%;
@@ -352,36 +408,78 @@ a{
 }
 
 
-
 .conteneur4 img{
     width: 100%;
     height: 100%;
 }
 
-.img_maison{
-    border: 1px solid red;
-}
 
-
-.conteneur4 .descr_maison{
+.descr_maison{
     width: 110%;
     font-weight: 400;
-    background: rgb(68, 68, 68);
 }
 
+
+.conteneur4 .prix_immo{
+    display: flex;
+    margin-top: -3.8em;
+}
+
+
+.conteneur4 .prix_immo .prix{
+    background: white;
+    margin-top: 0.58em;
+    margin-left: 0.4px;
+    width: 15%;
+    height: 5.8vh;
+    line-height: 1.8em;
+    text-align: center;
+    font-size: 1.6em;
+    color: rgb(138, 136, 136);
+}
+
+
+.arrow-right {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: 1.25em;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 20px solid white;
+}
+
+
+.conteneur4 .prix_immo .euros{
+    background: #96bf0d;
+    color: white;
+    margin-left: -0.8em;
+    margin-top: 0.58em;
+    width: 40%;
+    height: 5.8vh;
+    line-height: 1.8em;
+    text-align: center;
+    border-left: 1px solid white;
+    font-size: 1.6em;
+}
+
+.trait{
+    padding-right: 12px;
+    border-left: 2px solid rgb(104, 104, 104);
+    height: 70%;
+}
 
 .band_blanche{
-    position: relative;
-    top: -19px;
+    padding-left: 15px;
     background: white;
     height: 8em;
+    border: 1px solid transparent;
 }
-
 
 .descr_maison .text_gris{
     position: relative;
+    top: 1.5vh;
     margin-left: 15px;
-    top: 4vh;
     font-style: italic;
     font-size: 1.2em;
     color: rgb(104, 104, 104);
@@ -390,7 +488,7 @@ a{
 
 .descr_maison .text_vert{
     position: relative;
-    top: 1.5vh;
+    top: -0.7vh;
     margin-left: 15px;
     font-size: 1.2em;
     color: #96bf0d;
@@ -398,13 +496,9 @@ a{
 
 
 .descr_maison .fond_gris{
-    position: relative;
-    top: -10px;
-    margin: 5px;
+    margin-left: 20px;
     color: white;
     font-size: 15px;
-    font-weight: normal;
-    
 }
 
 
@@ -412,17 +506,19 @@ a{
     display: flex;
     justify-content: space-between;
     position: relative;
-    height: 7vh;
-    top: 3em;
+    height: 6vh;
+    top: 3.2em;
     background:#96bf0d;
     color: white;
+    line-height: 0.7em;
 }
 
 
 .band_selection p{
-    width: 30%;
+    width: 22%;
     margin-left: 5px;
-    border: 1px solid red;
+    margin-right: 5px;
+    font-weight: bold;
 }
 
 

@@ -74,7 +74,7 @@
 
             <form action="">
 
-                <input type="text" placeholder="Adresse de votre bien" name="recherche" id="adresse_bien">
+                <input type="text" placeholder="  Adresse de votre bien" name="recherche" id="adresse_bien">
 
             </form>
 

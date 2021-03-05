@@ -35,15 +35,16 @@ a{
 }
 
 
-.nav_user{
-    margin-right: -11.5em;
-}
-
 .nav_user img{
     position: relative;
-    width: 5%;
+    width: 20px;
     margin-right: 3px;
     top: 3px;
+}
+
+.nav_user ul{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav_user li{
@@ -57,6 +58,7 @@ a{
 
 .nav_user .favoris{
     color: #0e71b4;
+    margin-top: -6px;
 }
 
 
@@ -488,7 +490,7 @@ a{
 
 .descr_maison .text_vert{
     position: relative;
-    top: -0.7vh;
+    top: -0.8vh;
     margin-left: 15px;
     font-size: 1.2em;
     color: #96bf0d;
@@ -507,7 +509,7 @@ a{
     justify-content: space-between;
     position: relative;
     height: 6vh;
-    top: 3.2em;
+    top: 3.3em;
     background:#96bf0d;
     color: white;
     line-height: 0.7em;
@@ -516,8 +518,8 @@ a{
 
 .band_selection p{
     width: 22%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-weight: bold;
 }
 

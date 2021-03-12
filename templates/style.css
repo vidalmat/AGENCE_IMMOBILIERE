@@ -567,6 +567,53 @@ a{
 }
 
 
+.prix_immo2{
+    display: flex;
+    position: relative;
+    width: 45%;
+    top: -8.6em;
+    left: 14.2em;
+}
+
+
+.prix_immo2 .prix{
+    background: white;
+    margin-top: 0.58em;
+    margin-left: 0.4px;
+    width: 15%;
+    height: 5.8vh;
+    line-height: 1.8em;
+    text-align: center;
+    font-size: 1.6em;
+    color: rgb(138, 136, 136);
+}
+
+
+.arrow-right {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: 1.25em;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 20px solid white;
+}
+
+
+.prix_immo2 .euros{
+    background: #96bf0d;
+    color: white;
+    margin-left: -0.8em;
+    margin-top: 0.58em;
+    width: 40%;
+    height: 5.8vh;
+    line-height: 1.8em;
+    text-align: center;
+    border-left: 1px solid white;
+    font-size: 1.6em;
+}
+
+
 .descr_maison{
     width: 110%;
     font-weight: 400;

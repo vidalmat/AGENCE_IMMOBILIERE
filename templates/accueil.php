@@ -227,7 +227,7 @@
 
     </div>
 
-    <div class="prix_immo">
+    <div class="prix_immo2">
 
         <p class="prix">PRIX</p>
 

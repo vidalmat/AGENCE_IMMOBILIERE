@@ -92,7 +92,7 @@ a{
     color: rgb(104, 104, 104);
 }
 
-.menu_header .agence_rouge a{
+.menu_header .agence_vert a{
     color: #96bf0d;
 }
 
@@ -207,7 +207,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
-    border: 1px solid rgb(212, 212, 212);
+    border: 1px solid rgb(184, 184, 184);
     transition: background-color 500ms ease-in-out;
     -webkit-transition: background-color 500ms ease-in-out;
     -moz-transition: background-color 500ms ease-in-out;
@@ -368,6 +368,9 @@ a{
 }
 
 
+
+
+
 .conteneur3 .alerte_mail img{
     width: 10%;
     height: 50%;
@@ -397,6 +400,9 @@ a{
 
 /* Début du slide */
 
+
+/* annonce 1 */
+
 .conteneur4{
     border: 1px solid rgb(165, 165, 165);
     display: flex;
@@ -406,9 +412,8 @@ a{
     margin-right: auto;
     margin-left: auto;
     margin-top: -5em;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
 }
-
 
 .conteneur4 img{
     width: 100%;
@@ -422,13 +427,16 @@ a{
 }
 
 
-.conteneur4 .prix_immo{
+.prix_immo{
     display: flex;
-    margin-top: -3.8em;
+    position: relative;
+    width: 45%;
+    top: -13.6em;
+    left: 14.2em;
 }
 
 
-.conteneur4 .prix_immo .prix{
+.prix_immo .prix{
     background: white;
     margin-top: 0.58em;
     margin-left: 0.4px;
@@ -452,7 +460,7 @@ a{
 }
 
 
-.conteneur4 .prix_immo .euros{
+.prix_immo .euros{
     background: #96bf0d;
     color: white;
     margin-left: -0.8em;
@@ -483,8 +491,9 @@ a{
     top: 1.5vh;
     margin-left: 15px;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.8em;
     color: rgb(104, 104, 104);
+    font-weight: bold;
 }
 
 
@@ -504,19 +513,19 @@ a{
 }
 
 
-.band_selection{
+.band_selection1{
     display: flex;
     justify-content: space-between;
     position: relative;
     height: 6vh;
-    top: 3.3em;
+    top: 0;
     background:#96bf0d;
     color: white;
     line-height: 0.7em;
 }
 
 
-.band_selection p{
+.band_selection1 p{
     width: 22%;
     margin-left: 20px;
     margin-right: 20px;
@@ -524,18 +533,120 @@ a{
 }
 
 
-.band_selection p:last-child{
+.band_selection1 p:last-child{
     padding-left: 0;
 }
 
 
-.band_selection img{
+.band_selection1 img{
     width: 8%;
     height: 80%;
     margin-left: 10px;
     border: 2px solid white;
     border-radius: 50%;
 }
+/* fin annonce 1 */
+
+/* annonce 2 */
+
+.conteneur5{
+    border: 1px solid rgb(165, 165, 165);
+    display: flex;
+    background:  rgb(104, 104, 104);
+    width: 70%;
+    height: 45vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -5em;
+    margin-bottom: 5em;
+}
+
+.conteneur5 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.descr_maison{
+    width: 110%;
+    font-weight: 400;
+}
+
+
+.trait{
+    padding-right: 12px;
+    border-left: 2px solid rgb(104, 104, 104);
+    height: 70%;
+}
+
+.band_blanche{
+    padding-left: 15px;
+    background: white;
+    height: 8em;
+    border: 1px solid transparent;
+}
+
+.descr_maison .text_gris{
+    position: relative;
+    top: 1.5vh;
+    margin-left: 15px;
+    font-style: italic;
+    font-size: 1.1em;
+    color: rgb(104, 104, 104);
+    font-weight: bold;
+}
+
+
+.descr_maison .text_vert{
+    position: relative;
+    top: -0.8vh;
+    margin-left: 15px;
+    font-size: 1.2em;
+    color: #96bf0d;
+}
+
+
+.descr_maison .fond_gris{
+    margin-left: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+
+.band_selection2{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 6vh;
+    top: 3.2em;
+    background:#96bf0d;
+    color: white;
+    line-height: 0.7em;
+}
+
+
+.band_selection2 p{
+    width: 22%;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+.band_selection2 p:last-child{
+    padding-left: 0;
+}
+
+
+.band_selection2 img{
+    width: 8%;
+    height: 80%;
+    margin-left: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* fin annonce 2 */
 
 
 
@@ -642,13 +753,6 @@ footer{
     font-size: 0.9em;
 }
 
-
-
-
-
-
-
-
 /* Fin footer */
 
 /*Formulaire*/
@@ -727,6 +831,273 @@ footer{
     font-weight: bold;
 }
 
-
-
 /**/
+
+/* Responsive */
+
+@media screen and (max-width: 720px){
+
+    body{
+        width: 100%;
+    }
+
+@media all and (max-width: 720px)
+{
+
+    .conteneur2{
+        height: 110.5vh;
+    }
+    
+     /* menu burger */   
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .hamburger {
+        position: absolute;
+        top: 60px;
+        left: 12px;
+        width: 40px;
+        padding: 0 4px 8px 4px;
+    }
+    
+    .hamburger span{
+        display: block;/* passer le span en block étant donné qu'il était inline*/
+        height: 8px;
+        border-bottom: 3px solid white;
+    }
+    
+    .menu_header{
+        display: none; /* possibilité de remplacer par un transform: translate pour un effet vague */
+        position: absolute;
+        width: 100%;
+        z-index: 2000;
+        top: 50px;
+    }
+
+    
+    #menu:target{       /* le target est une ancre qui cible le menu dans le html < nav id="menu" class="menu_header"> qui sert à l'ouvrir en allant demander au <a href="#menu"></a>*/
+        display: block;
+        transform: translateX(0, 0, 0); /* affiche l'élément */
+    }
+    
+    .menu_header ul{
+        margin-top: 0;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        left: -1vw;
+    }
+    
+    .menu_header li{               /* Pour annuler le display: inline-block afin que le menu repasse à la verticale */
+        display: block;
+    }
+    
+    .menu_header li:first-child{
+        display: block;
+    }
+    
+    .menu_header ul li{
+        margin: 0;
+        background-color: white;
+        text-align: center;
+        line-height: 1em;
+        border-right: none;
+        border-bottom: 1px solid #0e71b4;
+    }
+
+    .menu_header ul li:hover{
+        background: #96bf0d;
+        transition: all 1s ease-out;
+    }
+
+    .menu_header li a{
+        display: block;
+        padding: 1em 2em;
+    }
+
+    .menu_header li a:hover{
+        color: white;
+    }
+    
+    .menu_header ul li:last-child{
+        border-bottom: none;
+    }
+    
+    .menu_header ul li:first-child{ /* pour mettre la croix au centre */
+        text-align: center;
+    }
+    
+    .menu_header ul a{
+        text-decoration: none;
+        color: #0e71b4;
+    }
+    /* Fin du menu burger */
+
+    .bloc_search{
+        display: block;
+        width: 90%;
+        height: 16em;
+    }
+
+    #cadre_estimer #cle{
+        width: 5%;
+        margin-right: 2px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    #cadre_estimer #estimer{
+        display: block;
+        background: rgb(56, 211, 190);
+        width: 45%;
+        height: 40px;
+        margin-right: 0;
+        margin-left: 2.1em;
+        border: none;
+        border-radius: 25px;
+        font-weight: bold;
+        color: white;
+        line-height: 40px;
+    }
+
+    #cadre_estimer #loyer{
+        background: none;
+        width: 35%;
+    }
+
+    .votre_bien{
+        position: relative;
+        width: 35%;
+        height: 17%;
+        top: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        border-radius: 0.6em;
+        background: #96bf0d;
+    }
+    
+    .conteneur3{
+        flex-direction: column;
+    }
+    
+    .conteneur3 .video img{
+        width: 15%;
+        height: 60%;
+        margin-top: 8px;
+        margin-left: 1.8em;
+        margin-right: 5px;
+    }
+    
+    
+    .conteneur3 .bien img{
+        width: 15%;
+        height: 60%;
+        margin-top: 8px;
+        margin-left: 5em;
+        margin-right: 8px;
+    }
+    
+    
+    .conteneur3 .alerte_mail img{
+        width: 10%;
+        height: 50%;
+        margin-top: 10px;
+        margin-left: 4.8em;
+        margin-right: 7px;
+    }
+    
+    
+    .conteneur3 .video, .bien, .alerte_mail{
+        width: 60%;
+        height: 5.4em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    
+
+    .conteneur4 .img_maison img{
+        display: none;
+    }
+
+    .conteneur5 .img_maison img{
+        display: none;
+    }
+
+    /* .conteneur4 .img_maison{
+        display: none;
+    }
+
+    .conteneur5 .img_maison{
+        display: none;
+    } */
+
+    /*----------------*/
+
+    .conteneur4{
+        width: 80%;
+        border: 1px solid red;
+    }
+
+
+    .conteneur4 .prix_immo{
+        display: flex;
+    }
+    
+    
+    .conteneur4 .prix_immo .prix{
+        width: 50%;
+        background: white;
+        margin-top: 0.58em;
+        margin-left: 0.4px;
+        height: 5.8vh;
+        line-height: 1.8em;
+        text-align: center;
+        font-size: 1.6em;
+        color: rgb(138, 136, 136);
+    }
+    
+    
+    .arrow-right {
+        position: relative;
+        width: 0;
+        height: 0;
+        top: 1.25em;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-left: 20px solid white;
+    }
+    
+    
+    .conteneur4 .prix_immo .euros{
+        width: 100%;
+        background: #96bf0d;
+        color: white;
+        margin-left: -0.8em;
+        margin-top: 0.58em;
+        
+        height: 5.8vh;
+        line-height: 1.8em;
+        text-align: center;
+        border-left: 1px solid white;
+        font-size: 1.6em;
+    }
+
+
+    .conteneur5{
+        height: 100%;
+        border: 1px solid green;
+    }
+
+}
+
+}
+
+
+
+
+/* Fin du responsive */

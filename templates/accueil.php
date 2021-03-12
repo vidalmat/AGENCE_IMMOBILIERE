@@ -31,17 +31,28 @@
     
     </div>
 
-    <div class="menu_header">
+    <div class="row head_small"> <!-- création du bouton du menu de déroulement -->
+        <div class="hamburger col-2">
+            <a href="#menu">
+                <span></span> <!--les span servent pour créer des traits dans le menu -->
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+    <div id="menu" class="menu_header">
         <nav>
             <ul>
-                <li><a href="#">Acheter</a></li>
-                <li><a href="#">Louer</a></li>
-                <li><a href="#">Vendre</a></li>
-                <li><a href="#">Estimer</a></li>
-                <li><a href="#">Faire gérer</a></li>
-                <li><a href="#">Syndic</a></li>
-                <li><a href="#">Immobilier professionnel</a></li>
-                <li class="agence_rouge"><a href="#">Nos agences</a></li>
+                <li><a href="#">&times;</a></li><!-- création de la croix pour la fermeture du menu -->
+                <li><a href="#">Acheter</a><span></span></li>
+                <li><a href="#">Louer</a><span></span></li>
+                <li><a href="#">Vendre</a><span></span></li>
+                <li><a href="#">Estimer</a><span></span></li>
+                <li><a href="#">Faire gérer</a><span></span></li>
+                <li><a href="#">Syndic</a><span></span></li>
+                <li><a href="#">Immobilier professionnel</a><span></span></li>
+                <li class="agence_vert"><a href="#">Nos agences</a><span></span></li>
             </ul>
         </nav>
     </div>
@@ -124,21 +135,11 @@
     </div>
         
 
-        <div class="conteneur4">
+    <div class="conteneur4">
 
-            <div class="img_maison">
-            
-                <img src="images/page1/maison.jpg" alt="maison">
-
-                <div class="prix_immo">
-
-                    <p class="prix">PRIX</p>
-
-                    <div class="arrow-right"></div>
-
-                    <p class="euros">1 470 000 €</p>
-
-                </div>
+        <div class="img_maison">
+        
+            <img src="images/page1/maison.jpg" alt="maison">
 
             </div>
 
@@ -148,21 +149,23 @@
 
                     <div class="trait">
                         <div class="text_gris">
-                        <p>Appartement standing ascenseur et vue</p>
+                            <p>Maison standing vue et jardin</p>
                         </div>
                         <div class="text_vert">
-                        <p>Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+                            <p>Bien de  350 m² - 8 pièces - Bordeaux (33000)</p>
                         </div>
                     </div>
                     
                 </div>
                 
 
-                <p class="fond_gris">Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
-                    Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
+                <p class="fond_gris">Découvrez cette superbe et spacieuse villa d'environ 350m2 sur un terrain de 5136m2 avec piscine et dépendances. 
+                    Idéal pour famille nombreuse ou maison de vacances, située à 5 minutes à pieds du centre ville, 
+                    elle se compose d'un trés grand séjour de plus de 90m2, 6 chambres et 4 salles d'eau/de bain. 
+                    Trés belle piscine avec pool house aménagé et grand garage. 
                 </p>
 
-                <div class="band_selection">
+                <div class="band_selection1">
 
                     <p>Sélectionner</p>
 
@@ -170,20 +173,69 @@
                         
                 </div>
 
+        </div>
+
+    </div>
+
+    <div class="prix_immo">
+
+        <p class="prix">PRIX</p>
+
+        <div class="arrow-right"></div>
+
+            <p class="euros">1 150 000 €</p>
+
+    </div>
+
+    <div class="conteneur5">
+
+    <div class="img_maison">
+        
+        <img src="images/page2/appartement.jpg" alt="appartement">
+
+    </div>
+
+    <div class="descr_maison">
+
+        <div class="band_blanche">
+
+            <div class="trait">
+                <div class="text_gris">
+                    <p>Appartement standing ascenseur et vue</p>
+                </div>
+                <div class="text_vert">
+                    <p>Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+                </div>
             </div>
+            
+        </div>
+        
 
+        <p class="fond_gris">Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
+            Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
+        </p>
+
+        <div class="band_selection2">
+
+            <p>Sélectionner</p>
+
+            <p class="voir">Voir le bien</p>
+                
         </div>
 
-        <div class="conteneur5">
+    </div>
 
-            <p>OFFRE 2</p>
+    </div>
 
-        </div>
+    <div class="prix_immo">
 
+        <p class="prix">PRIX</p>
 
-    
+        <div class="arrow-right"></div>
 
+        <p class="euros">1 470 000 €</p>
 
+    </div>
 
 </section>
 

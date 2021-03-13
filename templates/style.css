@@ -416,13 +416,17 @@ a{
 }
 
 .conteneur4 img{
-    width: 100%;
+    width: 42em;
     height: 100%;
 }
 
 
+.bloc_droit_annonce{
+    display: block;
+}
+
+
 .descr_maison{
-    width: 110%;
     font-weight: 400;
 }
 
@@ -430,9 +434,9 @@ a{
 .prix_immo{
     display: flex;
     position: relative;
-    width: 45%;
-    top: -13.6em;
-    left: 14.2em;
+    width: 100%;
+    top: -3.75em;
+    left: 1;
 }
 
 
@@ -474,7 +478,9 @@ a{
 }
 
 .trait{
-    padding-right: 12px;
+    position: relative;
+    display: inline-block;
+    top: 20px;
     border-left: 2px solid rgb(104, 104, 104);
     height: 70%;
 }
@@ -482,16 +488,18 @@ a{
 .band_blanche{
     padding-left: 15px;
     background: white;
+    width: 95.6%;
     height: 8em;
     border: 1px solid transparent;
 }
 
 .descr_maison .text_gris{
     position: relative;
-    top: 1.5vh;
+    background: white;
+    top: -1.5vh;
     margin-left: 15px;
     font-style: italic;
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: rgb(104, 104, 104);
     font-weight: bold;
 }
@@ -499,15 +507,15 @@ a{
 
 .descr_maison .text_vert{
     position: relative;
-    top: -0.8vh;
+    top: -4.5vh;
     margin-left: 15px;
     font-size: 1.2em;
     color: #96bf0d;
 }
 
 
-.descr_maison .fond_gris{
-    margin-left: 20px;
+.fond_gris{
+    margin-left: 10px;
     color: white;
     font-size: 15px;
 }

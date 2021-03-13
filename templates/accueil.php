@@ -141,29 +141,42 @@
         
             <img src="images/page1/maison.jpg" alt="maison">
 
+            <div class="prix_immo">
+
+                <p class="prix">PRIX</p>
+
+                <div class="arrow-right"></div>
+
+                <p class="euros">1 150 000 €</p>
+
             </div>
 
-            <div class="descr_maison">
+        </div>
 
-                <div class="band_blanche">
+            <div class="bloc_droit_annonce">
 
-                    <div class="trait">
-                        <div class="text_gris">
-                            <p>Maison standing vue et jardin</p>
+                <div class="descr_maison">
+
+                    <div class="band_blanche">
+
+                        <div class="trait">
+                            <div class="text_gris">
+                                <p>Maison standing vue et jardin</p>
+                            </div>
+                            <div class="text_vert">
+                                <p>Bien de  350 m² - 8 pièces - Bordeaux (33000)</p>
+                            </div>
                         </div>
-                        <div class="text_vert">
-                            <p>Bien de  350 m² - 8 pièces - Bordeaux (33000)</p>
-                        </div>
-                    </div>
-                    
+                    </div>   
                 </div>
-                
-
-                <p class="fond_gris">Découvrez cette superbe et spacieuse villa d'environ 350m2 sur un terrain de 5136m2 avec piscine et dépendances. 
-                    Idéal pour famille nombreuse ou maison de vacances, située à 5 minutes à pieds du centre ville, 
-                    elle se compose d'un trés grand séjour de plus de 90m2, 6 chambres et 4 salles d'eau/de bain. 
-                    Trés belle piscine avec pool house aménagé et grand garage. 
-                </p>
+                        
+                <div  class="fond_gris">
+                    <p>Découvrez cette superbe et spacieuse villa d'environ 350m2 sur un terrain de 5136m2 avec piscine et dépendances. 
+                        Idéal pour famille nombreuse ou maison de vacances, située à 5 minutes à pieds du centre ville, 
+                        elle se compose d'un trés grand séjour de plus de 90m2, 6 chambres et 4 salles d'eau/de bain. 
+                        Trés belle piscine avec pool house aménagé et grand garage. 
+                    </p>
+                </div>
 
                 <div class="band_selection1">
 
@@ -173,23 +186,74 @@
                         
                 </div>
 
+            </div>
+
+    </div>
+
+
+    <div class="conteneur5">
+
+
+    <div class="img_maison">
+        
+        <img src="images/page2/appartement.jpg" alt="maison">
+
+        <div class="prix_immo">
+
+            <p class="prix">PRIX</p>
+
+            <div class="arrow-right"></div>
+
+            <p class="euros">1 470 000 €</p>
+
         </div>
 
     </div>
 
-    <div class="prix_immo">
+        <div class="bloc_droit_annonce">
 
-        <p class="prix">PRIX</p>
+            <div class="descr_maison">
 
-        <div class="arrow-right"></div>
+                <div class="band_blanche">
 
-            <p class="euros">1 150 000 €</p>
+                    <div class="trait">
+                        <div class="text_gris">
+                            <p>Appartement standing ascenseur et vue</p>
+                        </div>
+                        <div class="text_vert">
+                            <p>Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+                    
+            <div  class="fond_gris">
+                <p>Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
+                    Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
+                </p>
+            </div>
 
-    </div>
+            <div class="band_selection1">
 
-    <div class="conteneur5">
+                <p>Sélectionner</p>
 
-    <div class="img_maison">
+                <p class="voir">Voir le bien</p>
+                    
+            </div>
+
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- <div class="img_maison">
         
         <img src="images/page2/appartement.jpg" alt="appartement">
 
@@ -235,7 +299,7 @@
 
         <p class="euros">1 470 000 €</p>
 
-    </div>
+    </div> -->
 
 </section>
 

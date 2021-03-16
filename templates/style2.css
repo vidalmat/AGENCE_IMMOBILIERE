@@ -1,0 +1,355 @@
+.sm-col-1 { width: 8.33%; }
+.sm-col-2 { width: 16.66%; }
+.sm-col-3 { width: 25%;}
+.sm-col-4 { width: 33.33%;}
+.sm-col-5 { width: 41.66%;}
+.sm-col-6 { width: 50%;}
+.sm-col-7 { width: 58.33%;}
+.sm-col-8 { width: 66.66%;}
+.sm-col-9 { width: 75%;}
+.sm-col-10 { width: 83.33%;}
+.sm-col-11 { width: 91.66%;}
+.sm-col-12 { width: 100%; }
+
+
+.conteneur2{
+    height: 110.5vh;
+}
+
+ /* menu burger */   
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hamburger {
+    position: absolute;
+    top: 60px;
+    left: 12px;
+    width: 40px;
+    padding: 0 4px 8px 4px;
+}
+
+.hamburger span{
+    display: block;/* passer le span en block étant donné qu'il était inline*/
+    height: 8px;
+    border-bottom: 3px solid white;
+}
+
+.menu_header{
+    display: none; /* possibilité de remplacer par un transform: translate pour un effet vague */
+    position: absolute;
+    width: 100%;
+    z-index: 2000;
+    top: 50px;
+}
+
+
+#menu:target{       /* le target est une ancre qui cible le menu dans le html < nav id="menu" class="menu_header"> qui sert à l'ouvrir en allant demander au <a href="#menu"></a>*/
+    display: block;
+    transform: translateX(0, 0, 0); /* affiche l'élément */
+}
+
+.menu_header ul{
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    left: -1vw;
+}
+
+.menu_header li{               /* Pour annuler le display: inline-block afin que le menu repasse à la verticale */
+    display: block;
+}
+
+.menu_header li:first-child{
+    display: block;
+}
+
+.menu_header ul li{
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    line-height: 1em;
+    border-right: none;
+    border-bottom: 1px solid #0e71b4;
+}
+
+.menu_header ul li:hover{
+    background: #96bf0d;
+    transition: all 1s ease-out;
+}
+
+.menu_header li a{
+    display: block;
+    padding: 1em 2em;
+}
+
+.menu_header li a:hover{
+    color: white;
+}
+
+.menu_header ul li:last-child{
+    border-bottom: none;
+}
+
+.menu_header ul li:first-child{ /* pour mettre la croix au centre */
+    text-align: center;
+}
+
+.menu_header ul a{
+    text-decoration: none;
+    color: #0e71b4;
+}
+/* Fin du menu burger */
+
+.bloc_search{
+    display: block;
+    width: 90%;
+    height: 16em;
+}
+
+#cadre_estimer #cle{
+    width: 5%;
+    margin-right: 2px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#cadre_estimer #estimer{
+    display: block;
+    background: rgb(56, 211, 190);
+    width: 45%;
+    height: 40px;
+    margin-right: 0;
+    margin-left: 2.1em;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    line-height: 40px;
+}
+
+#cadre_estimer #loyer{
+    background: none;
+    width: 35%;
+}
+
+.votre_bien{
+    position: relative;
+    width: 35%;
+    height: 17%;
+    top: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    border-radius: 0.6em;
+    background: #96bf0d;
+}
+
+.conteneur3{
+    flex-direction: column;
+}
+
+.conteneur3 .video img{
+    width: 15%;
+    height: 60%;
+    margin-top: 8px;
+    margin-left: 1.8em;
+    margin-right: 5px;
+}
+
+
+.conteneur3 .bien img{
+    width: 15%;
+    height: 60%;
+    margin-top: 8px;
+    margin-left: 5em;
+    margin-right: 8px;
+}
+
+
+.conteneur3 .alerte_mail img{
+    width: 10%;
+    height: 50%;
+    margin-top: 10px;
+    margin-left: 4.8em;
+    margin-right: 7px;
+}
+
+
+.conteneur3 .video, .bien, .alerte_mail{
+    width: 60%;
+    height: 5.4em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+/* annonce 1*/
+
+.conteneur4{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+
+.conteneur4 .img_maison img{
+    display: none;
+}
+
+.conteneur4 .prix_immo {
+    top: -3.7em;
+    height: 0;
+}
+
+.conteneur4 .prix_immo .prix{
+    width: 40%;
+    height: 5.8vh;
+    line-height: 1.6em;
+}
+
+.arrow-right {
+    top: 1.15em;
+}
+
+.conteneur4 .prix_immo .euros{
+    width: 100%;
+    height: 6.7vh;
+    line-height: 1.6em;
+}
+
+.text_gris1{
+    top: -1.5vh;
+}
+
+.text_vert1{
+    top: -4.5vh;
+}
+
+.band_selection1 p{
+    width: 23%;
+    line-height: 4px;
+}
+
+/* fin annonce 1 */
+
+
+/* annonce 2 */
+.conteneur5{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.conteneur5 .img_maison img{
+    display: none;
+}
+
+.conteneur5 .prix_immo {
+    top: -3.7em;
+    height: 0;
+}
+
+.conteneur5 .prix_immo .prix{
+    width: 40%;
+    height: 5.8vh;
+    line-height: 1.6em;
+}
+
+.conteneur5 .prix_immo .euros{
+    width: 100%;
+    height: 6.7vh;
+    line-height: 1.6em;
+}
+
+
+.text_gris2{
+    top: -2.5vh;
+}
+
+.text_vert2{
+    top: -5.5vh;
+}
+
+
+.conteneur5 .fond_gris{
+    margin-left: 20px;
+}
+
+.band_selection2 p{
+    width: 23%;
+    line-height: 4px;
+}
+
+.band_selection2{
+    top: 0;
+}
+
+/* fin annonce 2*/
+/*----------------*/
+
+/* Footer */
+
+footer{
+    height: 100%;
+}
+
+
+.conteneur6{
+    flex-direction: column;
+}
+
+
+.conteneur6 .logo_footer{
+    margin-left: 0;
+}
+
+.conteneur6 .logo_footer img{
+    margin-left: 10em;
+    margin-bottom: 3em;
+}
+
+
+
+.conteneur6 .par1{
+    width: 41%;
+    margin-top: 2.5em;
+}
+
+
+.conteneur6 .par2{
+    margin-top: -15em;
+    margin-left: 15em;
+    margin-bottom: 3em;
+}
+
+.bloc_applistore{
+    margin-left: 4em;
+    margin-bottom: 20px;
+}
+
+.bloc_applistore #apple{
+    width: 22%;
+}
+
+
+.bloc_applistore #google{
+    width: 27%;
+    height: 50px;
+}
+
+.conteneur7{
+    flex-direction: column;
+}
+
+
+.conteneur7 p{
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}

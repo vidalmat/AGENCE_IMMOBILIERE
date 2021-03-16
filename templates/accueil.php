@@ -160,10 +160,10 @@
                     <div class="band_blanche">
 
                         <div class="trait">
-                            <div class="text_gris">
+                            <div class="text_gris1">
                                 <p>Maison standing vue et jardin</p>
                             </div>
-                            <div class="text_vert">
+                            <div class="text_vert1">
                                 <p>Bien de  350 m² - 8 pièces - Bordeaux (33000)</p>
                             </div>
                         </div>
@@ -190,116 +190,58 @@
 
     </div>
 
-
     <div class="conteneur5">
 
+        <div class="img_maison">
+            
+            <img src="images/page2/appartement.jpg" alt="maison">
 
-    <div class="img_maison">
-        
-        <img src="images/page2/appartement.jpg" alt="maison">
+            <div class="prix_immo">
 
-        <div class="prix_immo">
+                <p class="prix">PRIX</p>
 
-            <p class="prix">PRIX</p>
+                <div class="arrow-right"></div>
 
-            <div class="arrow-right"></div>
+                <p class="euros">1 470 000 €</p>
 
-            <p class="euros">1 470 000 €</p>
-
-        </div>
-
-    </div>
-
-        <div class="bloc_droit_annonce">
-
-            <div class="descr_maison">
-
-                <div class="band_blanche">
-
-                    <div class="trait">
-                        <div class="text_gris">
-                            <p>Appartement standing ascenseur et vue</p>
-                        </div>
-                        <div class="text_vert">
-                            <p>Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-                    
-            <div  class="fond_gris">
-                <p>Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
-                    Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
-                </p>
-            </div>
-
-            <div class="band_selection1">
-
-                <p>Sélectionner</p>
-
-                <p class="voir">Voir le bien</p>
-                    
             </div>
 
         </div>
+
+            <div class="bloc_droit_annonce">
+
+                <div class="descr_maison">
+
+                    <div class="band_blanche">
+
+                        <div class="trait">
+                            <div class="text_gris2">
+                                <p>Appartement standing ascenseur et vue</p>
+                            </div>
+                            <div class="text_vert2">
+                                <p>Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                        
+                <div  class="fond_gris">
+                    <p>Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
+                        Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
+                    </p>
+                </div>
+
+                <div class="band_selection2">
+
+                    <p>Sélectionner</p>
+
+                    <p class="voir">Voir le bien</p>
+                        
+                </div>
+
+            </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-    <!-- <div class="img_maison">
-        
-        <img src="images/page2/appartement.jpg" alt="appartement">
-
-    </div>
-
-    <div class="descr_maison">
-
-        <div class="band_blanche">
-
-            <div class="trait">
-                <div class="text_gris">
-                    <p>Appartement standing ascenseur et vue</p>
-                </div>
-                <div class="text_vert">
-                    <p>Appartement de 161 m² - 5 pièces - Bordeaux (33000)</p>
-                </div>
-            </div>
-            
-        </div>
-        
-
-        <p class="fond_gris">Quartier Pey Berland, à 3mn du Triangle. Très bel et vaste appartement standing, situé au dernier étage d'une 
-            Résidence récente avec ascenseur. Beaucoup d'atouts à retenir : Très lumineux, ...
-        </p>
-
-        <div class="band_selection2">
-
-            <p>Sélectionner</p>
-
-            <p class="voir">Voir le bien</p>
-                
-        </div>
-
-    </div>
-
-    </div>
-
-    <div class="prix_immo2">
-
-        <p class="prix">PRIX</p>
-
-        <div class="arrow-right"></div>
-
-        <p class="euros">1 470 000 €</p>
-
-    </div> -->
 
 </section>
 

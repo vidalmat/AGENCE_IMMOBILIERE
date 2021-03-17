@@ -97,6 +97,7 @@ a{
     border-bottom: 3px solid white;
 }
 
+
 .menu_header{
     display: none; /* possibilité de remplacer par un transform: translate pour un effet vague */
     width: 100%;
@@ -106,7 +107,6 @@ a{
 
 #menu:target{       /* le target est une ancre qui cible le menu dans le html < nav id="menu" class="menu_header"> qui sert à l'ouvrir en allant demander au <a href="#menu"></a>*/
     display: block;
-    transform: translateX(0, 0, 0); /* affiche l'élément */
 }
 
 .menu_header ul{
@@ -137,7 +137,7 @@ a{
 
 .menu_header ul li:hover{
     background: #96bf0d;
-    transition: all 1s ease-out;
+    transition: all 1.2s ease-out;
 }
 
 .menu_header li a{
@@ -574,7 +574,6 @@ a{
     justify-content: space-between;
     position: relative;
     height: 6vh;
-    top: 0;
     background:#96bf0d;
     color: white;
     line-height: 0.7em;
@@ -582,7 +581,7 @@ a{
 
 .band_selection1 p{
     width: 23%;
-    line-height: 4px;
+    line-height: 12px;
     margin-left: 20px;
     margin-right: 20px;
     font-weight: bold;
@@ -608,14 +607,6 @@ a{
 .conteneur5 .img_maison img{
     display: none;
 }
-
-/* .bloc_droit_annonce{
-    display: block;
-} */
-
-/* .descr_maison{
-    font-weight: 400;
-} */
 
 .conteneur5 .prix_immo {
     display: flex;
@@ -684,7 +675,6 @@ a{
     justify-content: space-between;
     position: relative;
     height: 6vh;
-    top: 0;
     background:#96bf0d;
     color: white;
     line-height: 0.7em;
@@ -692,7 +682,7 @@ a{
 
 .band_selection2 p{
     width: 23%;
-    line-height: 4px;
+    line-height: 12px;
     margin-left: 20px;
     margin-right: 20px;
     font-weight: bold;
@@ -801,6 +791,7 @@ footer{
 
 /* Responsive */
 
+
 @media screen and (min-width: 720px){
 
     body{
@@ -808,6 +799,21 @@ footer{
     }
 
 @media all and (min-width: 720px)
+{
+
+}
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+
+    body{
+        width: 100%;
+    }
+
+@media all and (min-width: 1024px)
 {
     /* annulation du burger */
 

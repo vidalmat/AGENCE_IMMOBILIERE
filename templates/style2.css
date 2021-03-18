@@ -24,6 +24,7 @@ a{
 }
 
 /* header */
+
 /*#progress{
 	background-color: #839c49;
 	height: 3px;
@@ -33,6 +34,8 @@ a{
 	left: 0;
 	z-index: 9999; /* Peut être important si vous avez un menu en position fixe */
 /*}*/
+
+                            /* ------------ Conteneur 1 ------------- */
 
 .conteneur1{
     display: flex;
@@ -164,29 +167,6 @@ a{
 }
 /* Fin du menu burger */
 
-
-/* .menu_header{
-    text-align: center;
-    border-top: 1px solid #96bf0d;
-}
-
-.menu_header li:first-child{
-    display: none;
-}
-
-.menu_header li{
-    margin: 3em;
-    list-style-type: none;
-    display: inline;
-    list-style: none;
-    font-weight: bold;
-    color: rgb(104, 104, 104);
-}
-
-.menu_header .agence_vert a{
-    color: #96bf0d;
-} */
-
 /* fin du header */ 
 
 
@@ -194,6 +174,7 @@ a{
 
 /* Bloc recherche */
 
+                            /* ------------ Conteneur 2 ------------- */
 .conteneur2{
     height: 110.5vh;
     background-image: url("../images/img_accueil_flou.jpg");
@@ -353,7 +334,6 @@ a{
     display: flex;
 }
 
-
 .mains img{
     position: relative;
     width: 13%;
@@ -403,6 +383,8 @@ a{
     -o-transition: background-color 300ms ease-in-out;
 }
 
+                            /* ------------ Conteneur 3 ------------- */
+
 .conteneur3{
     display: flex;
     flex-direction: column;
@@ -448,6 +430,7 @@ a{
     color: rgb(104, 104, 104);
 }
 
+                            /* ------------ Conteneur 4 ------------- */
 /* annonce 1*/
 
 .conteneur4{
@@ -570,8 +553,10 @@ a{
 
 /* fin annonce 1 */
 
+                            /* ------------ Conteneur 5 ------------- */
 
 /* annonce 2 */
+
 .conteneur5{
     border: 0.5px solid rgb(104, 104, 104);
     display: flex;
@@ -678,6 +663,8 @@ footer{
     height: 100%;
 }
 
+                            /* ------------ Conteneur 6 ------------- */
+
 .conteneur6{
     display: flex;
     flex-direction: column;
@@ -742,6 +729,8 @@ footer{
     height: 50px;
 }
 
+                            /* ------------ Conteneur 7 ------------- */
+
 .conteneur7{
     display: flex;
     flex-direction: column;
@@ -757,8 +746,8 @@ footer{
     text-align: center;
 }
 
-/* Responsive */
 
+/* --------> Responsive <-------- */
 
 @media screen and (min-width: 720px){
     body{
@@ -823,6 +812,8 @@ footer{
         /* Début section */
 
         /* Bloc recherche */
+
+                                /* ------------ Conteneur 2 ------------- */
         
         .conteneur2{
             height: 79vh;
@@ -866,6 +857,8 @@ footer{
             width: 25%;
         }
 
+                            /* ------------ Conteneur 3 ------------- */
+
         .conteneur3{
             display: flex;
             flex-direction: row;
@@ -880,6 +873,7 @@ footer{
 
         /* Fin bloc recherche */
 
+                            /* ------------ Conteneur 4 ------------- */
 
         /* annonce 1 */
 
@@ -935,6 +929,8 @@ footer{
         }
 
         /* fin annonce 1 */
+
+                                /* ------------ Conteneur 5 ------------- */
 
         /* annonce 2 */
 
@@ -992,6 +988,8 @@ footer{
             height: 29em;
         }
 
+                        /* ------------ Conteneur 6 ------------- */
+
         .conteneur6{
             display: flex;
             flex-direction: row;
@@ -1020,6 +1018,8 @@ footer{
             height: 49px;
         }
 
+                        /* ------------ Conteneur 7 ------------- */
+
         .conteneur7{
             display: flex;
             flex-direction: row;
@@ -1035,7 +1035,8 @@ footer{
 
         /* Fin footer */
 
-        /*Formulaire*/
+                        /* ------------ Formulaire ------------- */
+
         .span{
             font-weight: bold;
         }
@@ -1110,3 +1111,5 @@ footer{
         }
     }
 }
+
+/* --------> Fin du responsive <-------- */

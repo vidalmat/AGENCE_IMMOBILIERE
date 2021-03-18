@@ -6,6 +6,7 @@
 <header>
     <!-- <div id="progress"></div> -->
 
+                        <!-- ------------ Conteneur 1 ------------- -->
     <div class="conteneur1">
         <div class="logo_header">
             <img src="images/logo.png" alt="logo">
@@ -44,7 +45,9 @@
         </nav>
     </div>
 </header>
+
 <section>
+                        <!-- ------------ Conteneur 2 ------------- -->
     <div class="conteneur2">
         <div class="bloc_search">
             <div class="bloc">
@@ -55,7 +58,7 @@
                 </div>
             </div>
             <p>Estimez votre bien en 5 minutes</p>
-            <form action="#">
+            <form action="#" method="">
                 <input type="text" placeholder="  Adresse de votre bien" name="recherche" id="adresse_bien">
             </form>
             <div id="cadre_estimer">
@@ -67,6 +70,7 @@
             <h1 class="votre_bien"><img src="images/mains.png" alt="mains"><a href="#">Votre bien</a></h1>
         </div>
         </div>
+                        <!-- ------------ Conteneur 3 ------------- -->
         <div class="conteneur3">
             <div class="bien">
                 <img src="images/ordi.png" alt="ordi">
@@ -82,6 +86,7 @@
             </div>
         </div>
     </div>
+                        <!-- ------------ Conteneur 4 ------------- -->
     <div class="conteneur4">
         <div class="img_maison">
             <img src="images/page1/maison.jpg" alt="maison">
@@ -117,6 +122,7 @@
                 </div>
             </div>
         </div>
+                        <!-- ------------ Conteneur 5 ------------- -->
     <div class="conteneur5">
         <div class="img_maison">
             <img src="images/page2/appartement.jpg" alt="maison">
@@ -152,6 +158,7 @@
     </div>
 </section>
 <footer>
+                        <!-- ------------ Conteneur 6 ------------- -->
     <div class="conteneur6">
         <div class="logo_footer">
             <img src="images/logob&w.png" alt="">
@@ -184,6 +191,7 @@
             <img src="images/logo_playstore.png" alt="logo_playstore" id="google">
         </div>
     </div>
+                        <!-- ------------ Conteneur 7 ------------- -->
     <div class="conteneur7">
         <div class="mentions">
             <p>Mentions légales</p>

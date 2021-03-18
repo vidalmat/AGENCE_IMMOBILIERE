@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="row head_small"> <!-- création du bouton du menu de déroulement -->
-        <div class="hamburger col-2">
+        <div class="hamburger_form col-2">
             <a href="#menu">
                 <span></span> <!--les span servent pour créer des traits dans le menu -->
                 <span></span>
@@ -46,14 +46,14 @@
 </header>
 
 <section>
-    <p class="fildar">abri-nature-immobilier / <a href="index.php?route=showhome">accueil /</a><span class="span"> connexion</span></p>
+    <p class="fildar">Immo-Dev / <a href="index.php?route=showhome">accueil /</a><span class="span"> connexion</span></p>
     <div class="conteneur_connexion">
         <div class="connexion">
             <p class="parconnexion">Vous tentez d'accéder à un contenu qui nécessite que vous soyez connecté(e).</p>
-            <form action="index.php?route=connect" method="POST">
-                    <h1><img src="images/fleche_bas.png" alt="fleche bas">Se connecter</h1>
-                    <input type="email" placeholder="Email" name="mail" required>
-                        <input type="password" placeholder="Mot de passe" name="mdp" required >
+            <h1><img src="images/fleche_bas.png" alt="fleche bas">Se connecter</h1>
+            <form action="index.php?route=connect" method="POST" class="bloc_connexion">
+                <input type="email" placeholder="Email" name="mail" required>
+                <input type="password" placeholder="Mot de passe" name="mdp" required >
                 <input type="submit" id='submit' value='LOGIN' >
             </form>
         </div>

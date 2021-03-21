@@ -118,7 +118,7 @@
                 </div>
                 <div class="band_selection1">
                     <p>Sélectionner</p>
-                    <p class="voir">Voir le bien</p>
+                    <p class="voir"><a href="index.php?route=showmaison">Voir le bien</a></p>
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@
             </div>
             <div class="band_selection2">
                 <p>Sélectionner</p>
-                <p class="voir">Voir le bien</p>
+                <p class="voir"><a href="index.php?route=showappartement">Voir le bien</a></p>
             </div>
         </div>
     </div>

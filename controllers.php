@@ -19,13 +19,11 @@ function showForm() {
 
 
 
-// Fonction d'affichage de la page formulaire (formulaire_agent.php)
+// Fonction d'affichage de la page formulaire agent (formulaire_agent.php)
 function showFormAgent() {
 
     return ["template" => "templates/formulaire_agent.php"];
 }
-
-
 
 
 function showEspaceAgent() {
@@ -64,6 +62,18 @@ function showBien() {
         "template" => "templates/page_bien.php",
         "biens" => $bien
     ];
+}
+
+// Fonction d'affichage de la page1.php (maison)
+function showMaison() {
+
+    return ["template" => "templates/page1.php"];
+}
+
+// Fonction d'affichage de la page2.php (appartement)
+function showAppartement() {
+
+    return ["template" => "templates/page2.php"];
 }
 
 

@@ -37,6 +37,10 @@ switch ($route) {
     break;
     case "showbien" : $toTemplate = showBien();
     break;
+    case "showmaison" : $toTemplate = showMaison();
+    break;
+    case "showappartement" : $toTemplate = showAppartement();
+    break;
     case "connect" : connectUser();
     break;
     case "connect_agent" : connectAgent();

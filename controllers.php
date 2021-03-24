@@ -67,13 +67,13 @@ function showBien() {
 // Fonction d'affichage de la page1.php (maison)
 function showMaison() {
 
-    return ["template" => "templates/page1.php"];
+    return ["template" => "templates/page_maison.php"];
 }
 
 // Fonction d'affichage de la page2.php (appartement)
 function showAppartement() {
 
-    return ["template" => "templates/page2.php"];
+    return ["template" => "templates/page_appartement.php"];
 }
 
 

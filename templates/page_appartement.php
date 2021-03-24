@@ -53,8 +53,14 @@
 
 </header>
 
-<section class="page_biens">
+<p class="fildar">Immo-Dev / <a href="index.php?route=showhome">accueil /</a><span class="span"> appartement</span></p>
 
+<section class="page_biens">
+    <div class="titre">
+        <h1>À Avignon</h1>
+        <h1>À VENDRE APPARTEMENT 5 PIÈCES 161 M²</h1>
+        <h1 class="descriptif_vert">1 150 000 € **</h1>
+    </div>
     <div class="container_page_biens">
         <div class="description">
             <div class="description_offre">
@@ -67,11 +73,56 @@
             </div>
             <div class="description_bien">
                 <h1>> Descriptif du bien</h1>
+                <div class="caracteristique">
+                    <h3 class="general">Général</h3>
+                    <h3>Détails +</h3>
+                    <h3>Copropriété</h3>
+                </div>
+                <div class="code_postal">
+                    <p>Code postal</p>
+                    <p class="descriptif_vert">33000</p>
+                </div>
+                <div class="ville">
+                    <p>Ville</p>
+                    <p class="descriptif_vert">Bordeaux</p>
+                </div>
+                <div class="surface">
+                    <p>Surface habitable (m²)</p>
+                    <p class="descriptif_vert">161 m²</p>
+                </div>
+                <div class="nb_chambre">
+                    <p>Nombre de chambre(s)</p>
+                    <p class="descriptif_vert">3</p>
+                </div>
+                <div class="nb_piece">
+                    <p>Nombre de pièces</p>
+                    <p class="descriptif_vert">5</p>
+                </div>
+                <div class="etage">
+                    <p>Étage</p>
+                    <p class="descriptif_vert">4</p>
+                </div>
+                <div class="ascenseur">
+                    <p>Ascenseur</p>
+                    <p class="descriptif_vert">OUI</p>
+                </div>
+                <div class="vue">
+                    <p>Vue</p>
+                    <p class="descriptif_vert">DÉGAGÉE</p>
+                </div>
+            </div>
+            <div class="description_contact">
+                <div class="contact_info">
+                    <img src="images/contact.jpg" alt="contact">
+                    <div class="container_contact">
+                        <p class="contact">Contact</p>
+                        <div class="plus_dinfos">
+                            <p class="infos">Plus d'infos</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="description_contact">
-
-        </div>
     </div>
-
 </section>

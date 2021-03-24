@@ -57,7 +57,7 @@
 
 <section class="page_biens">
     <div class="titre">
-        <h1>À Avignon</h1>
+        <h1 class="descriptif_vert">À Avignon</h1>
         <h1>À VENDRE APPARTEMENT 5 PIÈCES 161 M²</h1>
         <h1 class="descriptif_vert">1 150 000 € **</h1>
     </div>

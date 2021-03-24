@@ -55,11 +55,16 @@
 
 <p class="fildar">Immo-Dev / <a href="index.php?route=showhome">accueil /</a><span class="span"> maison</span></p>
 <section class="page_biens">
+    <div class="titre">
+        <h1>À Avignon</h1>
+        <h1>À VENDRE APPARTEMENT 5 PIÈCES 161 M²</h1>
+        <h1 class="descriptif_vert">1 150 000 € **</h1>
+    </div>
     <div class="container_page_biens">
         <div class="description">
             <div class="description_offre">
                 <h1>> Description de l'offre</h1>
-                <p>Magnifique propriété à 10mns d'Avignon de 600 m² habitables et 500 m² de dépendances sur 2.7 hectares . 
+                <p>Magnifique propriété à 10mn d'Avignon de 600 m² habitables et 500 m² de dépendances sur 2.7 hectares . 
                     La bastide du 19ème est composé de 10 chambres, salon , séjour, cuisine équipée, plusieurs espaces détente, 
                     un gite indépendant de type 3 et plusieurs garages. Un ascenseur peut être installé dans un espace déjà créé. 
                     Coté jardin 200 chênes truffiers et 40 oliviers bio bordent la piscine sécurisée. Coup de coeur assuré!!</p>
@@ -104,14 +109,16 @@
                     <p class="descriptif_vert">DÉGAGÉE</p>
                 </div>
             </div>
-        </div>
-        <div class="description_contact">
-            <div class="contact_info">
-                <img src="images/contact.jpg" alt="contact">
-                <p class="contact">Contact</p>
-                <div class="plus_dinfos">
-                    <p class="infos">Plus d'infos</p>
-                    <p class="plus">+</p>
+            <div class="description_contact">
+                <div class="contact_info">
+                    <img src="images/contact.jpg" alt="contact">
+                    <div class="container_contact">
+                        <p class="contact">Contact</p>
+                        <div class="plus_dinfos">
+                            <p class="infos">Plus d'infos</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

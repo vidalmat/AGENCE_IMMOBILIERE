@@ -44,7 +44,7 @@
                 <li><a href="#">Estimer</a><span></span></li>
                 <li><a href="#">Faire gérer</a><span></span></li>
                 <li><a href="#">Syndic</a><span></span></li>
-                <li><a href="#">Immobilier professionnel</a><span></span></li>
+                <li><a href="#">Immobilier pro</a><span></span></li>
                 <li class="agence_vert"><a href="#">Nos agences</a><span></span></li>
             </ul>
         </nav>

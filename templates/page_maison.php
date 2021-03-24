@@ -65,7 +65,7 @@
             <div class="description_offre">
                 <h1>> Description de l'offre</h1>
                 <p>Magnifique propriété à 10mn d'Avignon de 600 m² habitables et 500 m² de dépendances sur 2.7 hectares . 
-                    La bastide du 19ème est composé de 10 chambres, salon , séjour, cuisine équipée, plusieurs espaces détente, 
+                    La bastide du 19ème est composé de 5 chambres, salon , séjour, cuisine équipée, plusieurs espaces détente, 
                     un gite indépendant de type 3 et plusieurs garages. Un ascenseur peut être installé dans un espace déjà créé. 
                     Coté jardin 200 chênes truffiers et 40 oliviers bio bordent la piscine sécurisée. Coup de coeur assuré!!</p>
             </div>

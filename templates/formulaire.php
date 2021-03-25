@@ -8,7 +8,7 @@
 <header>
     <div class="conteneur1">
         <div class="logo_header">
-            <img src="images/logo.png" alt="logo">
+            <a href="index.php?route=showhome"><img src="images/logo.png" alt="logo"></a>
         </div>
         <div class="nav_user">
             <nav>
@@ -44,7 +44,6 @@
         </nav>
     </div>
 </header>
-
 <section>
     <p class="fildar">Immo-Dev / <a href="index.php?route=showhome">accueil /</a><span class="span"> connexion</span></p>
     <div class="conteneur_connexion">

@@ -14,7 +14,7 @@
 
 <div class="conteneur1">
         <div class="logo_header">
-            <img src="images/logo.png" alt="logo">
+            <a href="index.php?route=showhome"><img src="images/logo.png" alt="logo"></a>
         </div>
         <div class="nav_user">
             <nav>
@@ -49,13 +49,9 @@
             </ul>
         </nav>
     </div>
-
-
 </header>
-
-<p class="fildar">Immo-Dev / <a href="index.php?route=showhome">accueil /</a><span class="span"> appartement</span></p>
-
 <section class="page_biens">
+    <p class="fildar">Immo-Dev / <a href="index.php?route=showhome">accueil /</a><span class="span"> appartement</span></p>
     <div class="titre">
         <h1 class="descriptif_vert">À Avignon</h1>
         <h1>À VENDRE APPARTEMENT 5 PIÈCES 161 M²</h1>
@@ -115,7 +111,7 @@
                 <div class="contact_info">
                     <img src="images/contact.jpg" alt="contact">
                     <div class="container_contact">
-                        <p class="contact">Contact</p>
+                        <a href="#" class="contact"><p>Contact</p></a>
                         <div class="plus_dinfos">
                             <p class="infos">Plus d'infos</p>
                             <p class="plus">+</p>

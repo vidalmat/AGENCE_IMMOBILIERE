@@ -5,11 +5,10 @@
 
 <header>
     <!-- <div id="progress"></div> -->
-
                         <!-- ------------ Conteneur 1 ------------- -->
     <div class="conteneur1">
         <div class="logo_header">
-            <img src="images/logo.png" alt="logo">
+            <a href="index.php?route=showhome"><img src="images/logo.png" alt="logo"></a>
         </div>
         <div class="nav_user">
             <nav>
@@ -45,7 +44,6 @@
         </nav>
     </div>
 </header>
-
 <section>
                         <!-- ------------ Conteneur 2 ------------- -->
     <div class="conteneur2">
@@ -157,51 +155,4 @@
         </div>
     </div>
 </section>
-<footer>
-                        <!-- ------------ Conteneur 6 ------------- -->
-    <div class="conteneur6">
-        <div class="logo_footer">
-            <img src="images/logob&w.png" alt="">
-        </div>
-        <div class="par1">
-            <ul>À découvrir
-                <li>Nos conseils</li>
-                <li>Découvrez votre futur quartier</li>
-                <li>Nos actualités</li>
-                <li>Vendez ou louez votre bien</li>
-                <li>Trouvez une agence immobilière</li>
-                <li>Guide et conseils immobiliers</li>
-            </ul>
-        </div>
-        <div class="par2">
-            <ul>À propos de nous
-                <li>Notre agence</li>
-                <li>Qui sommes nous</li>
-                <li>Nous contacter</li>
-                <li>Nous recrutons</li>
-                <li>Besoin d'aide?</li>
-                <li>Votre avis nous interesse</li>
-            </ul>
-        </div>
-    </div>
-    <div class="par3">
-        <div class="bloc_applistore">
-            <p>Retrouvez nous sur :</p>
-            <img src="images/logo_apple.png" alt="logo_apple" id="apple">
-            <img src="images/logo_playstore.png" alt="logo_playstore" id="google">
-        </div>
-    </div>
-                        <!-- ------------ Conteneur 7 ------------- -->
-    <div class="conteneur7">
-        <div class="mentions">
-            <p>Mentions légales</p>
-        </div>
-        <div class="mentions">
-            <p>Politique de confidentialité</p>
-        </div>
-        <div class="mentions">
-            <p>Paramétrer les cookies</p>
-        </div>
-    </div>
-</footer>
 

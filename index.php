@@ -85,4 +85,51 @@ switch ($route) {
 
 
 </body>
+<footer>
+                        <!-- ------------ Conteneur 6 ------------- -->
+    <div class="conteneur6">
+        <div class="logo_footer">
+        <a href="index.php?route=showhome"><img src="images/logob&w.png" alt="logo_footer"></a>
+        </div>
+        <div class="par1">
+            <ul>À découvrir
+                <li><a href="#">Nos conseils</a></li>
+                <li><a href="#">Découvrez votre futur quartier</a></li>
+                <li><a href="#">Nos actualités</a></li>
+                <li><a href="#">Vendez ou louez votre bien</a></li>
+                <li><a href="#">Trouvez une agence immobilière</a></li>
+                <li><a href="#">Guide et conseils immobiliers</a></li>
+            </ul>
+        </div>
+        <div class="par2">
+            <ul>À propos de nous
+                <li><a href="#">Notre agence</a></li>
+                <li><a href="#">Qui sommes nous</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Nous recrutons</a></li>
+                <li><a href="#">Besoin d'aide?</a></li>
+                <li><a href="#">Votre avis nous interesse</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="par3">
+        <div class="bloc_applistore">
+            <p>Retrouvez nous sur :</p>
+            <img src="images/logo_apple.png" alt="logo_apple" id="apple">
+            <img src="images/logo_playstore.png" alt="logo_playstore" id="google">
+        </div>
+    </div>
+                        <!-- ------------ Conteneur 7 ------------- -->
+    <div class="conteneur7">
+        <div class="mentions">
+            <p><a href="#">Mentions légales</a></p>
+        </div>
+        <div class="mentions">
+            <p><a href="#">Politique de confidentialité</a></p>
+        </div>
+        <div class="mentions">
+            <p><a href="#">Paramétrer les cookies</a></p>
+        </div>
+    </div>
+</footer>
 </html>

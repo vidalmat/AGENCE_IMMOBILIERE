@@ -1,20 +1,13 @@
 <?php
 
-
-
-
 //INSERT INTO clients VALUES ('', 'Dupont', 'Jean', '15 rue de la République 84000 Avignon', 'jeandupont@dupont.fr', '06060606006', 'dupont');
 
-
-
-
 ?>
-
 
 <header>
     <div class="conteneur1">
         <div class="logo_header">
-            <img src="images/logo.png" alt="logo">
+            <a href="index.php?route=showhome"><img src="images/logo.png" alt="logo"></a>
         </div>
         <div class="nav_user">
             <nav>
@@ -50,18 +43,15 @@
         </nav>
     </div>
 </header>
-
-<p class="fildar">abri-nature-immobilier / <a href="index.php?route=showhome">accueil /</a><span class="span"> mon espace</span></p>
-
-
-<ul>
-
-    <li><a href="#">Messages</a></li>
-    <li><a href="#">Favoris</a></li>
-    <li><a href="#">Visites</a></li>
-    <li><a href="index.php?route=deconnect">Déconnecter</a></li>
-
-</ul>
+<section>
+    <p class="fildar">abri-nature-immobilier / <a href="index.php?route=showhome">accueil /</a><span class="span"> mon espace</span></p>
+    <ul>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Favoris</a></li>
+        <li><a href="#">Visites</a></li>
+        <li><a href="index.php?route=deconnect">Déconnecter</a></li>
+    </ul>
+</section>
 
 
 

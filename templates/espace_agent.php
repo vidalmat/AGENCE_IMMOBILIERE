@@ -4,11 +4,10 @@ var_dump($_POST);
 
 ?>
 
-
 <header>
     <div class="conteneur1">
         <div class="logo_header">
-            <img src="images/logo.png" alt="logo">
+            <a href="index.php?route=showhome"><img src="images/logo.png" alt="logo"></a>
         </div>
         <div class="nav_user">
             <nav>
@@ -46,10 +45,7 @@ var_dump($_POST);
 </header>
 <section>
     <p class="fildar">abri-nature-immobilier / <a href="index.php?route=showhome">accueil /</a><span class="span"> mon espace agent</span></p>
-
-
     <form action="index.php?route=insert_bien" method="POST" enctype="multipart/form-data">
-
         <select name="categorie" id="">
             <option value="1">Vente</option>
             <option value="2">Location</option>
@@ -59,16 +55,10 @@ var_dump($_POST);
         <input type="text" placeholder="Prix" name="prix" id="prix">
         <input type="file" name="image">
         <input type="submit" value="Ajouter un bien" id="ajout_bien">
-
     </form>
 
-
-
     <!--Affichage des biens-->
-
-    <?php
-    $biens = $toTemplate["biens"];
-    ?>
+    <?php $biens = $toTemplate["biens"];?>
 
     <table>
         <tr>
@@ -78,16 +68,14 @@ var_dump($_POST);
             <th>Prix</th>
             <th>Action</th>
         </tr>
-
         <?php foreach($biens as $bien): ?>
-            <tr>
-            <td><img width="120" src="upload/<?= $bien["image"] ?>" alt="image"></td>
-            <td><?= $bien["nom"] ?></td>
-            <td><?= $bien["adresse"] ?></td>
-            <td><?= $bien["prix"] ?></td>
-            <td>Modifier | <a href="index.php?route=sup_bien&id_bien=<?= $bien["id_bien"] ?>"> Supprimer</a></td>
-            </tr>
-
+        <tr>
+        <td><img width="120" src="upload/<?= $bien["image"] ?>" alt="image"></td>
+        <td><?= $bien["nom"] ?></td>
+        <td><?= $bien["adresse"] ?></td>
+        <td><?= $bien["prix"] ?></td>
+        <td>Modifier | <a href="index.php?route=sup_bien&id_bien=<?= $bien["id_bien"] ?>"> Supprimer</a></td>
+        </tr>
         <?php endforeach ?>
     </table>
 </section>

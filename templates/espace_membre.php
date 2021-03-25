@@ -45,12 +45,26 @@
 </header>
 <section>
     <p class="fildar">abri-nature-immobilier / <a href="index.php?route=showhome">accueil /</a><span class="span"> mon espace</span></p>
-    <ul>
-        <li><a href="#">Messages</a></li>
-        <li><a href="#">Favoris</a></li>
-        <li><a href="#">Visites</a></li>
-        <li><a href="index.php?route=deconnect">Déconnecter</a></li>
-    </ul>
+    <div class="container_espace_membre">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.php?route=showhome">Accueil</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Rdv</a></li>
+                <li><a href="#">Favoris</a></li>
+                <li><a href="#">Visites</a></li>
+                <li><a href="index.php?route=deconnect">Déconnecter</a></li>
+            </ul>
+        </div>
+        <div class="bloc_espace_membre">
+            <a href="index.php?route=showhome"><p>Accueil</p></a>
+            <a href="#"><p>Messages</p></a>
+            <a href="#"><p>Rdv</p></a>
+            <a href="#"><p>Favoris</p></a>
+            <a href="#"><p>Visites</p></a>
+            <a href="index.php?route=deconnect"><p>Déconnecter</p></a>
+        </div>
+    </div>
 </section>
 
 

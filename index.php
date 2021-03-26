@@ -91,25 +91,27 @@ switch ($route) {
         <div class="logo_footer">
         <a href="index.php?route=showhome"><img src="images/logob&w.png" alt="logo_footer"></a>
         </div>
-        <div class="par1">
-            <ul>À découvrir
-                <li><a href="#">Nos conseils</a></li>
-                <li><a href="#">Découvrez votre futur quartier</a></li>
-                <li><a href="#">Nos actualités</a></li>
-                <li><a href="#">Vendez ou louez votre bien</a></li>
-                <li><a href="#">Trouvez une agence immobilière</a></li>
-                <li><a href="#">Guide et conseils immobiliers</a></li>
-            </ul>
-        </div>
-        <div class="par2">
-            <ul>À propos de nous
-                <li><a href="#">Notre agence</a></li>
-                <li><a href="#">Qui sommes nous</a></li>
-                <li><a href="#">Nous contacter</a></li>
-                <li><a href="#">Nous recrutons</a></li>
-                <li><a href="#">Besoin d'aide?</a></li>
-                <li><a href="#">Votre avis nous interesse</a></li>
-            </ul>
+        <div class="bloc_text_footer">
+            <div class="par1">
+                <ul>À découvrir
+                    <li><a href="#">Nos conseils</a></li>
+                    <li><a href="#">Découvrez votre futur quartier</a></li>
+                    <li><a href="#">Nos actualités</a></li>
+                    <li><a href="#">Vendez ou louez votre bien</a></li>
+                    <li><a href="#">Trouvez une agence immobilière</a></li>
+                    <li><a href="#">Guide et conseils immobiliers</a></li>
+                </ul>
+            </div>
+            <div class="par2">
+                <ul>À propos de nous
+                    <li><a href="#">Notre agence</a></li>
+                    <li><a href="#">Qui sommes nous</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#">Nous recrutons</a></li>
+                    <li><a href="#">Besoin d'aide?</a></li>
+                    <li><a href="#">Votre avis nous interesse</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="par3">

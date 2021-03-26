@@ -64,9 +64,9 @@
                 <img src="images/cle.png" alt="cle" id="cle">
                 <button type="button" id="loyer">Estimer mon loyer</button>
             </div>
-        <div class="mains">
-            <h1 class="votre_bien"><img src="images/mains.png" alt="mains"><a href="#">Votre bien</a></h1>
-        </div>
+            <div class="mains">
+                <h1 class="votre_bien"><img src="images/mains.png" alt="mains"><a href="#">Votre bien</a></h1>
+            </div>
         </div>
                         <!-- ------------ Conteneur 3 ------------- -->
         <div class="conteneur3">
